@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "http://manormasharma.github.io/",
+  "homepage": "https://manormasharma.github.io/Portfolio/",
   "private": true,
   "dependencies": {
     "@lottiefiles/lottie-interactivity": "^1.6.1",
