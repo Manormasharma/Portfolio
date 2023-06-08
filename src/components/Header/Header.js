@@ -1,8 +1,9 @@
 import React from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap';
 import "./Header.scss";
 import linkedin from "./../../images/social/linkedin.png";
 import gmail from "./../../images/social/gmail.png";
+import { Link } from 'react-router-dom';
 
 export default class Header extends React.Component {
     constructor(props) {
@@ -22,12 +23,14 @@ export default class Header extends React.Component {
             <>
                 <div class="coloredborder fixed-top"></div>
                 <Navbar color="white" container expand="md" className='py-3 w-100 fixed-top'>
-                    <NavbarBrand href="/portfolio">Manorma Sharma</NavbarBrand>
+                    <div className='navbar-brand'>
+                        <Link to="/portfolio"> Manorma Sharma</Link>
+                    </div>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar className='justify-content-end'>
                         <Nav className="mr-auto align-items-md-center flex-row" navbar>
                             <NavItem className='me-5'>
-                                <NavLink href="/portfolio/resume">Resume</NavLink>
+                                <Link to="/portfolio/resume">Resume</Link>
                             </NavItem>       
                             <NavItem className='me-5'>   
                                 <NavLink className='' aria-label="email" href="mailto:mannuu0501@gmail.com?subject=Mail from Manorma Portfolio">
