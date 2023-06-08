@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.80dfff44.css",
+    "main.js": "/static/js/main.5e8a0add.js",
+    "static/media/jassibindra.png": "/static/media/jassibindra.162fed9cce9fdfa68a9e.png",
+    "static/media/ryaanace.png": "/static/media/ryaanace.dd25045fa353c0b24ddb.png",
+    "static/media/spherecom.png": "/static/media/spherecom.5675dc369d161e7a9344.png",
+    "static/media/hackerearth-offseason.png": "/static/media/hackerearth-offseason.c4f6adfd131a5cc9fc15.png",
+    "static/media/black-friday-deal.png": "/static/media/black-friday-deal.71830a8fccde7bc5a517.png",
+    "static/media/wordpress.png": "/static/media/wordpress.558ce8b2efb7b495b402.png",
+    "static/media/python.png": "/static/media/python.dea924d737bb84eb9ce3.png",
+    "static/media/lottie.png": "/static/media/lottie.e8b041abdb2d3e74115e.png",
+    "static/media/gulp.png": "/static/media/gulp.c7de3a048f2afe3efd1f.png",
+    "static/media/Manorma_Sharma_Resume.pdf": "/static/media/Manorma_Sharma_Resume.79ba002cd382077db231.pdf",
+    "static/media/bootstrap.png": "/static/media/bootstrap.a692f04a045f8133192d.png",
+    "static/media/photoshop.png": "/static/media/photoshop.f99dd0843cc495219ebe.png",
+    "static/media/css.png": "/static/media/css.74ff0b5fd86f9eadddd3.png",
+    "static/media/sass.png": "/static/media/sass.a2591e27bc692562995c.png",
+    "static/media/gmail.png": "/static/media/gmail.af622e50e3a4da0c013d.png",
+    "static/media/react.png": "/static/media/react.5e076df924cc7fb59bc5.png",
+    "static/media/js.png": "/static/media/js.75220e22aacfddc29275.png",
+    "static/media/jira.png": "/static/media/jira.bfdaee442bc8319cfff3.png",
+    "static/media/node.png": "/static/media/node.7716e1e3fbba14f82259.png",
+    "static/media/postman.png": "/static/media/postman.d7eb7d7af12cca899dee.png",
+    "static/media/figma.svg": "/static/media/figma.0f4098dccb2a84e24331b00bc6a8dcf8.svg",
+    "index.html": "/index.html",
+    "main.80dfff44.css.map": "/static/css/main.80dfff44.css.map",
+    "main.5e8a0add.js.map": "/static/js/main.5e8a0add.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80dfff44.css",
+    "static/js/main.5e8a0add.js"
+  ]
+}
