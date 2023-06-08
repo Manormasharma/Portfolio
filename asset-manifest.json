@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.80dfff44.css",
-    "main.js": "/Portfolio/static/js/main.71525f94.js",
+    "main.js": "/Portfolio/static/js/main.cd9bbc6a.js",
     "static/media/jassibindra.png": "/Portfolio/static/media/jassibindra.162fed9cce9fdfa68a9e.png",
     "static/media/ryaanace.png": "/Portfolio/static/media/ryaanace.dd25045fa353c0b24ddb.png",
     "static/media/spherecom.png": "/Portfolio/static/media/spherecom.5675dc369d161e7a9344.png",
@@ -10,7 +10,6 @@
     "static/media/wordpress.png": "/Portfolio/static/media/wordpress.558ce8b2efb7b495b402.png",
     "static/media/python.png": "/Portfolio/static/media/python.dea924d737bb84eb9ce3.png",
     "static/media/lottie.png": "/Portfolio/static/media/lottie.e8b041abdb2d3e74115e.png",
-    "static/media/gulp.png": "/Portfolio/static/media/gulp.c7de3a048f2afe3efd1f.png",
     "static/media/Manorma_Sharma_Resume.pdf": "/Portfolio/static/media/Manorma_Sharma_Resume.79ba002cd382077db231.pdf",
     "static/media/bootstrap.png": "/Portfolio/static/media/bootstrap.a692f04a045f8133192d.png",
     "static/media/photoshop.png": "/Portfolio/static/media/photoshop.f99dd0843cc495219ebe.png",
@@ -25,10 +24,10 @@
     "static/media/figma.svg": "/Portfolio/static/media/figma.0f4098dccb2a84e24331b00bc6a8dcf8.svg",
     "index.html": "/Portfolio/index.html",
     "main.80dfff44.css.map": "/Portfolio/static/css/main.80dfff44.css.map",
-    "main.71525f94.js.map": "/Portfolio/static/js/main.71525f94.js.map"
+    "main.cd9bbc6a.js.map": "/Portfolio/static/js/main.cd9bbc6a.js.map"
   },
   "entrypoints": [
     "static/css/main.80dfff44.css",
-    "static/js/main.71525f94.js"
+    "static/js/main.cd9bbc6a.js"
   ]
 }
