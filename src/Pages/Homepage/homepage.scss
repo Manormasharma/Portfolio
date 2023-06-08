@@ -1,0 +1,23 @@
+.herobanner{
+    // position: relative;
+    // height: calc(80vh - 4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    color: var(--color-dark-blue);
+    h1{
+        font-weight: 900;
+        font-size: 65px;
+        font-family: 'Source Sans Pro', sans-serif !important;
+    }
+}
+
+
+@media (max-width:1024px) {
+    .herobanner{
+        h1{
+            font-size: 40px;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+$color_1: #45505b;
+$color_2: #0563bb;
+$font-family_1: "Poppins", sans-serif;
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume {
+	.resume-title {
+		font-size: 26px;
+		font-weight: 700;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		color:var(--color-dark-blue);
+	}
+	.resume-item {
+		padding: 0 0 20px 20px;
+		margin-top: -2px;
+		border-left: 2px solid var(--color-dark-blue);
+		position: relative;
+		.responsibilty{
+			color: var(--color-pink);
+		}
+		h4 {
+			line-height: 18px;
+			font-size: 18px;
+			font-weight: 600;
+			text-transform: uppercase;
+			font-family: $font-family_1;
+			color:var(--color-dark-blue);
+			margin-bottom: 10px;
+			a {
+				line-height: 18px;
+				font-size: 18px;
+				font-weight: 600;
+				text-transform: uppercase;
+				font-family: $font-family_1;
+				color:var(--color-dark-blue);
+				margin-bottom: 10px;
+			}
+		}
+		h5 {
+			font-size: 16px;
+			background: #e4edf9;
+			padding: 5px 15px;
+			display: inline-block;
+			font-weight: 600;
+			margin-bottom: 10px;
+		}
+		ul {
+			padding-left: 20px;
+			li {
+				padding-bottom: 10px;
+			}
+		}
+		&:last-child {
+			padding-bottom: 0;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			border-radius: 50px;
+			left: -9px;
+			top: 0;
+			background: #fff;
+			border: 2px solid var(--color-dark-blue);
+		}
+	}
+}
