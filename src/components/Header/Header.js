@@ -31,12 +31,12 @@ export default class Header extends React.Component {
                             </NavItem>       
                             <NavItem className='me-5'>   
                                 <NavLink className='' aria-label="email" href="mailto:mannuu0501@gmail.com?subject=Mail from Manorma Portfolio">
-                                    <img src={gmail} className="img-fluid" width={25} />
+                                    <img src={gmail} className="img-fluid" width={25}  alt='gmail'/>
                                 </NavLink>
                             </NavItem>
                             <NavItem className='me-5'>
                                 <NavLink href="https://www.linkedin.com/in/manorma-sharma/" target="_blank">
-                                    <img src={linkedin} className="img-fluid" width={25} />
+                                    <img src={linkedin} className="img-fluid" width={25} alt='linkedin' />
                                 </NavLink>
                             </NavItem>
                                                 
