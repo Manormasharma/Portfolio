@@ -27,7 +27,7 @@ export default class Header extends React.Component {
                     <Collapse isOpen={this.state.isOpen} navbar className='justify-content-end'>
                         <Nav className="mr-auto align-items-md-center flex-row" navbar>
                             <NavItem className='me-5'>
-                                <NavLink href="/resume">Resume</NavLink>
+                                <NavLink href="/portfolio/resume">Resume</NavLink>
                             </NavItem>       
                             <NavItem className='me-5'>   
                                 <NavLink className='' aria-label="email" href="mailto:mannuu0501@gmail.com?subject=Mail from Manorma Portfolio">
