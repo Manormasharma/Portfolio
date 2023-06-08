@@ -28,16 +28,16 @@ export default class Header extends React.Component {
                     </div>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar className='justify-content-end'>
-                        <Nav className="mr-auto align-items-md-center flex-row" navbar>
-                            <NavItem className='me-5'>
+                        <Nav className="mr-auto align-items-center flex-row" navbar>
+                            <NavItem className='me-4'>
                                 <Link to="/portfolio/resume">Resume</Link>
                             </NavItem>       
-                            <NavItem className='me-5'>   
+                            <NavItem className='me-4'>   
                                 <NavLink className='' aria-label="email" href="mailto:mannuu0501@gmail.com?subject=Mail from Manorma Portfolio">
                                     <img src={gmail} className="img-fluid" width={25}  alt='gmail'/>
                                 </NavLink>
                             </NavItem>
-                            <NavItem className='me-5'>
+                            <NavItem className='me-4'>
                                 <NavLink href="https://www.linkedin.com/in/manorma-sharma/" target="_blank">
                                     <img src={linkedin} className="img-fluid" width={25} alt='linkedin' />
                                 </NavLink>
