@@ -45,33 +45,33 @@ function Resume() {
 
               <h3 class="resume-title">Certificates</h3>
               <div class="resume-item">
-                <h4><a href="https://drive.google.com/open?id=1IxYdl5f3IXuzImMbhPbiRF4Yvk3U6p91" target='_blank'> Python</a></h4>
+                <h4><a href="https://drive.google.com/open?id=1IxYdl5f3IXuzImMbhPbiRF4Yvk3U6p91" target='_blank' rel="noreferrer" > Python</a></h4>
                 <h5>2019</h5>
                 <p><em>Basent Technologies, Banglore, India </em></p>
               </div>
               <div class="resume-item">
-                <h4><a href="https://www.udemy.com/certificate/UC-C9NQAOHO/" target='_blank'> Bootstrap</a></h4>
+                <h4><a href="https://www.udemy.com/certificate/UC-C9NQAOHO/" target='_blank' rel="noreferrer" > Bootstrap</a></h4>
                 <h5>2019</h5>
                 <p><em>Udemy</em></p>
               </div>
               <div class="resume-item">
-                <h4><a href="https://www.udemy.com/certificate/UC-1JPF0MUV/" target='_blank'>HTML 5 and CSS 3</a></h4>
+                <h4><a href="https://www.udemy.com/certificate/UC-1JPF0MUV/" target='_blank' rel="noreferrer" >HTML 5 and CSS 3</a></h4>
                 <h5>2019</h5>
                 <p><em>Udemy</em></p>
               </div>
               <div class="resume-item">
-                <h4><a href="https://www.linkedin.com/learning/certificates/3294c11fcf7554509608e9807bb6b11e965cc15161c160c333089ff6eaedd434" target='_blank'> GitHub Essential Training</a></h4>
+                <h4><a href="https://www.linkedin.com/learning/certificates/3294c11fcf7554509608e9807bb6b11e965cc15161c160c333089ff6eaedd434" target='_blank' rel="noreferrer" > GitHub Essential Training</a></h4>
                 <h5>2021</h5>
                 <p><em>Linkedin</em></p>
               </div>
               <div class="resume-item">
-                <h4><a href="https://www.linkedin.com/learning/certificates/93088bd2631fc6209c9c4a60e7158810ddc6f366969e4a994a3ef34622e18596" target='_blank'> Sass Essential Training</a></h4>
+                <h4><a href="https://www.linkedin.com/learning/certificates/93088bd2631fc6209c9c4a60e7158810ddc6f366969e4a994a3ef34622e18596" target='_blank' rel="noreferrer" > Sass Essential Training</a></h4>
                 <h5>2021</h5>
                 <p><em>Linkedin</em></p>
               </div>
               <h3 class="resume-title">Awards</h3>
               <div class="resume-item">
-                <h4><a href="https://www.linkedin.com/in/manorma-sharma/overlay/1635521328499/single-media-viewer/?profileId=ACoAABQxusgBJh3LoClwJVZP-hS4RbA3f2YhftY" target='_blank'> Hackerearth Kudos Award</a></h4>
+                <h4><a href="https://www.linkedin.com/in/manorma-sharma/overlay/1635521328499/single-media-viewer/?profileId=ACoAABQxusgBJh3LoClwJVZP-hS4RbA3f2YhftY" target='_blank' rel="noreferrer" > Hackerearth Kudos Award</a></h4>
                 <h5>2022</h5>
                 <p><em>Hackerearth, Banglore, India </em></p>
               </div>
@@ -120,7 +120,7 @@ function Resume() {
                 <p className='responsibilty'><strong>Responsibilities</strong></p>
                 <ul>
                   <li>Mainly worked on WordPress CMS</li>
-                  <li>Responsible for converting the PSD to HTML</li>
+                  <li>Responsible for converting the PSD to HTML</li> 
                   <li>Responsible for performance tuning of website.</li>
                   <li>Directly communicate with clients to gather requirements</li>
                   <li>Worked on Magento, Open cart, Joomla CMS.</li>
@@ -132,7 +132,7 @@ function Resume() {
           </div>
         </div>
         <div class="row">
-          <div className='col-12 text-center'><a href={CV} className="btn-custom" size="lg" download>Download CV</a></div>
+          <div className='col-12 text-center'><a href={CV} className="btn-custom" size="lg" download rel="noreferrer" >Download CV</a></div>
         </div>
       </div>
       <div>

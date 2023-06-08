@@ -3,7 +3,7 @@ import About from "../About/about";
 import Project from "../Project/Project";
 import './homepage.scss';
 
-function Home() {
+const Home = () =>  {
     return (
         <>
             <HeroBanner />
