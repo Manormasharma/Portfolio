@@ -1,5 +1,3 @@
-$color_1: #fff;
-
 .item {
 	border: none;
 	margin-bottom: 30px;
@@ -31,7 +29,7 @@ $color_1: #fff;
 			text-align: center;
 			z-index: 3;
 			transform: translateY(-50%);
-			color: $color_1;
+			color: #fff;
 			opacity: 0;
 			visibility: hidden;
 			margin-top: 20px;

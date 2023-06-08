@@ -11,33 +11,7 @@ import gmail from "./../../images/social/gmail.png";
 
 import github from './../../images/skills/github.png'
 
-const linkedstyle ={
-  height: 100,
-}
-const githubstyle ={
-  height: 100,
-}
-const linkedinint = {
-  mode:"scroll",
-    actions: [
-        {
-        visibility: [0.50, 1.0],
-        type: "play",
-        loop: "false"
-        }
-    ]
-};
-const githubint = {
-  mode:"cursor",
-  actions: [
-      {
-          type: "hover",
-          forceFlag: false
-      }
-  ]
-};
 export default class HeroBanner extends React.Component{
-  
   render() {
     return (
       <>

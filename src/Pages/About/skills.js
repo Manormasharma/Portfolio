@@ -5,8 +5,6 @@ import bootstrap from './../../images/skills/bootstrap.png'
 import css from './../../images/skills/css.png'
 import git from './../../images/skills/git.png'
 import github from './../../images/skills/github.png'
-import gulp from './../../images/skills/gulp.png'
-import heroku from './../../images/skills/heroku.png'
 import html from './../../images/skills/html.png'
 import jira from './../../images/skills/jira.png'
 import js from './../../images/skills/js.png'
@@ -25,9 +23,6 @@ import lottielogo from './../../images/skills/lottie.png'
 import skills from "../../lottie-json/skills.json";
 import Lottie from "lottie-react";
 
-const style = {
-    height: 300,
-};
 const interactivity = {
     mode:"cursor",
     player: "#eightthLottie",
@@ -52,60 +47,24 @@ const Skills = () => {
               <Col lg={{ size: 6,  offset: 1 }} className='skills-sec'>
                 <h4 className="section-subheading mb-4">Tech I Worked on and More...</h4>
                 <div className="skills-icons d-flex align-items-center">
-                  <a className='' href='' title='HTML'>
-                    <img src={html} className="img-fluid"/>
-                  </a>
-                  <a className='' href='' title='CSS'>
-                    <img src={css} className="img-fluid"/>
-                  </a>
-                  <a className='' href='' title='Bootstrap'>
-                    <img src={bootstrap} className="img-fluid"/>
-                  </a>
-                  <a className='' href='' title='Javascript'>
-                    <img src={js} className="img-fluid"/>
-                  </a>
-                  <a className='' href='' title='Pythons'>
-                    <img src={python} className="img-fluid"/>
-                  </a>
-                  <a className='' href='' title='SASS'>
-                    <img src={sass} className="img-fluid"/>
-                  </a>
-                  <a className='' href='' title='Wordpress'>
-                    <img src={wordpress} className="img-fluid"/>
-                  </a>
-                  <a className='' href='' title='Webpack'>
-                    <img src={webpack} className="img-fluid"/>
-                  </a>
-                  <a className='' href='' title='Node'>
-                    <img src={node} className="img-fluid"/>
-                  </a>
-                  <a className='' href='' title='React'>
-                    <img src={react} className="img-fluid"/>
-                  </a>
-                  <a className='' href='' title='Jira'>
-                    <img src={jira} className="img-fluid"/>
-                  </a>
-                  <a className='' href='' title='Github'>
-                    <img src={github} className="img-fluid"/>
-                  </a>
-                  <a className='' href='' title='Git'>
-                    <img src={git} className="img-fluid"/>
-                  </a>
-                  <a className='' href='' title='Postman'>
-                    <img src={postman} className="img-fluid"/>
-                  </a>
-                  <a className='' href='' title='Photoshop'>
-                    <img src={photoshop} className="img-fluid"/>
-                  </a>
-                  <a className='' href='' title='Figma'>
-                    <img src={figma} className="img-fluid"/>
-                  </a>
-                  <a className='' href='' title='Bitbucket'>
-                    <img src={bitbucket} className="img-fluid"/>
-                  </a>
-                  <a className='' href='' title='Lottie'>
-                    <img src={lottielogo} className="img-fluid"/>
-                  </a>
+                  <img src={html} className="img-fluid" alt="HTML" title='HTML'/>
+                  <img src={css} className="img-fluid" alt="CSS" title='CSS'/>
+                  <img src={bootstrap} className="img-fluid" alt="Bootstrap" title='Bootstrap'/>
+                  <img src={js} className="img-fluid" alt="Javascript" title='Javascript'/>
+                  <img src={python} className="img-fluid" alt="Pythons" title='Pythons'/>
+                  <img src={sass} className="img-fluid" alt="SASS" title='SASS'/>
+                  <img src={wordpress} className="img-fluid" alt="Wordpress"  title='Wordpress'/>
+                  <img src={webpack} className="img-fluid" alt="Webpack" title='Webpack'/>
+                  <img src={node} className="img-fluid" alt="Node" title='Node'/>
+                  <img src={react} className="img-fluid" alt="React" title='React'/>
+                  <img src={jira} className="img-fluid" alt="Jira" title='Jira'/>
+                  <img src={github} className="img-fluid" alt="Github" title='Github'/>
+                  <img src={git} className="img-fluid" alt="Git" title='Git'/>
+                  <img src={postman} className="img-fluid" alt="Postman" title='Postman'/>
+                  <img src={photoshop} className="img-fluid" alt="Photoshop" title='Photoshop'/>
+                  <img src={figma} className="img-fluid" alt="Figma" title='Figma'/>
+                  <img src={bitbucket} className="img-fluid" alt="Bitbucket" title='Bitbucket'/>
+                  <img src={lottielogo} className="img-fluid" alt="Lottie" title='Lottie'/>
                 </div>
               </Col>
             </Row>
