@@ -22,7 +22,7 @@ export default class Header extends React.Component {
             <>
                 <div class="coloredborder fixed-top"></div>
                 <Navbar color="white" container expand="md" className='py-3 w-100 fixed-top'>
-                    <NavbarBrand href="/">Manorma Sharma</NavbarBrand>
+                    <NavbarBrand href="/portfolio">Manorma Sharma</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar className='justify-content-end'>
                         <Nav className="mr-auto align-items-md-center flex-row" navbar>
