@@ -5,11 +5,8 @@ import Skills from './skills';
 import Lottie from "lottie-react";
 import female from "../../lottie-json/working-women.json";
 import "./about.scss"
-const style = {
-    height: 300,
-};
+
 const interactivity = {
-  mode:"cursor",
   mode:"scroll",
     actions: [
         {
