@@ -1,0 +1,17 @@
+nav{
+    &.navbar{
+        box-shadow: 0 10px 100px rgb(0 0 0 / 10%);
+        top: 4px;
+    }
+    .navbar-brand{
+        color: #000;
+        font-size: 30px;
+        font-weight: 900;
+    } 
+    .nav-item{
+        a{
+            color: #000;
+            font-weight: 600;
+        }
+    }  
+}
