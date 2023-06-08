@@ -4,9 +4,11 @@ nav{
         top: 4px;
     }
     .navbar-brand{
-        color: #000;
-        font-size: 30px;
-        font-weight: 900;
+        a{
+            color: #000;
+            font-size: 30px;
+            font-weight: 900;
+        }
     } 
     .nav-item{
         a{
