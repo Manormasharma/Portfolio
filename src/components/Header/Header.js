@@ -33,7 +33,7 @@ export default class Header extends React.Component {
                                 <Link to="/portfolio/resume">Resume</Link>
                             </NavItem>       
                             <NavItem className='me-4'>   
-                                <NavLink className='' aria-label="email" href="mailto:mannuu0501@gmail.com?subject=Mail from Manorma Portfolio">
+                                <NavLink className='' aria-label="email" href="mailto:manorma.bussiness@gmail.com?subject=Mail from Manorma Portfolio">
                                     <img src={gmail} className="img-fluid" width={25}  alt='gmail'/>
                                 </NavLink>
                             </NavItem>

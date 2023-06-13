@@ -1,6 +1,5 @@
 import React from 'react';
 import "./resume.scss"
-import CV from './../../assets/pdf/Manorma_Sharma_Resume.pdf'
 
 function Resume() {
   return (
@@ -20,7 +19,7 @@ function Resume() {
               </em></p>
               <ul>
                 <li>Delhi</li>
-                <li>mannuu0501@gmail.com</li>
+                <li>manorma.bussiness@gmail.com</li>
               </ul>
             </div>
             {/* Summary Ends */}
@@ -130,9 +129,6 @@ function Resume() {
             
             {/* Work History Ends */}
           </div>
-        </div>
-        <div class="row">
-          <div className='col-12 text-center'><a href={CV} className="btn-custom" size="lg" download rel="noreferrer" >Download CV</a></div>
         </div>
       </div>
       <div>
