@@ -27,7 +27,7 @@ export default class HeroBanner extends React.Component{
                     <a className='me-3' href='https://github.com/Manormasharma' title='Github' target="_blank" rel="noreferrer">
                       <img src={github} className="img-fluid" width={50}  alt="github"/>
                     </a>
-                    <a className='me-4' href='mailto:mannuu0501@gmail.com?subject=Mail from Manorma Portfolio' title='Gmail' rel="noreferrer">
+                    <a className='me-4' href='mailto:manorma.bussiness@gmail.com?subject=Mail from Manorma Portfolio' title='Gmail' rel="noreferrer">
                       <img src={gmail} className="img-fluid" width={35}  alt="gmail"/>
                     </a>
                     <a className='' href='https://www.linkedin.com/in/manorma-sharma/' target="_blank" title='Linkedin' rel="noreferrer">

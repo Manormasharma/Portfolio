@@ -40,7 +40,7 @@ export default class About extends React.Component{
                   <p>I offer a wide range of expertise, handling all aspects of development. This includes creating appealing user interfaces with HTML, CSS, JavaScript, React, and Ecmascript, as well as designing efficient server-side architecture using Python or JavaScript (Node.js). I also have a basic understanding of Azure.</p>
                   <p>I excel in seamless integration, optimal performance, and API development. With a strong track record of successful projects, I'm confident in surpassing your expectations.</p> 
                   <p>Browse my portfolio to see my past achievements and experience firsthand how my skills can enhance your online presence. Let's create impactful digital experiences together to drive your business forward. </p>
-                  <p>Contact me today at mannuu0501@gmail.com to discuss your project requirements and start an exciting development journey together!</p>
+                  <p>Contact me today at manorma.bussiness@gmail.com  to discuss your project requirements and start an exciting development journey together!</p>
               </Col>
               <Col lg="7" className='skills-sec d-none d-lg-block'>
                 <Lottie animationData={female} interactivity={interactivity} />
