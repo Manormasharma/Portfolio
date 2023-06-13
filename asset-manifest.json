@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.53456cc6.css",
-    "main.js": "/portfolio/static/js/main.6ce79915.js",
+    "main.js": "/portfolio/static/js/main.837f7d88.js",
     "static/media/jassibindra.png": "/portfolio/static/media/jassibindra.162fed9cce9fdfa68a9e.png",
     "static/media/ryaanace.png": "/portfolio/static/media/ryaanace.dd25045fa353c0b24ddb.png",
     "static/media/spherecom.png": "/portfolio/static/media/spherecom.5675dc369d161e7a9344.png",
@@ -10,7 +10,6 @@
     "static/media/wordpress.png": "/portfolio/static/media/wordpress.558ce8b2efb7b495b402.png",
     "static/media/python.png": "/portfolio/static/media/python.dea924d737bb84eb9ce3.png",
     "static/media/lottie.png": "/portfolio/static/media/lottie.e8b041abdb2d3e74115e.png",
-    "static/media/Manorma_Sharma_Resume.pdf": "/portfolio/static/media/Manorma_Sharma_Resume.79ba002cd382077db231.pdf",
     "static/media/bootstrap.png": "/portfolio/static/media/bootstrap.a692f04a045f8133192d.png",
     "static/media/photoshop.png": "/portfolio/static/media/photoshop.f99dd0843cc495219ebe.png",
     "static/media/css.png": "/portfolio/static/media/css.74ff0b5fd86f9eadddd3.png",
@@ -24,10 +23,10 @@
     "static/media/figma.svg": "/portfolio/static/media/figma.0f4098dccb2a84e24331b00bc6a8dcf8.svg",
     "index.html": "/portfolio/index.html",
     "main.53456cc6.css.map": "/portfolio/static/css/main.53456cc6.css.map",
-    "main.6ce79915.js.map": "/portfolio/static/js/main.6ce79915.js.map"
+    "main.837f7d88.js.map": "/portfolio/static/js/main.837f7d88.js.map"
   },
   "entrypoints": [
     "static/css/main.53456cc6.css",
-    "static/js/main.6ce79915.js"
+    "static/js/main.837f7d88.js"
   ]
 }
