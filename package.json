@@ -1,8 +1,8 @@
 {
-  "name": "Portfolio_live",
+  "name": "Portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://manormasharma.github.io/portfolio",
+  "homepage": "http://manormasharma.github.io/Portfolio",
   "dependencies": {
     "@lottiefiles/lottie-interactivity": "^1.6.1",
     "@lottiefiles/lottie-player": "^1.6.2",
