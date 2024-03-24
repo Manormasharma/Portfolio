@@ -21,6 +21,10 @@ p{
     color: #666;
     margin-bottom: 2rem;
 }
+li{
+  font-size: 18px;
+  color: #666;
+}
 .coloredborder{
   margin: 0;
   padding: 0;
@@ -32,7 +36,9 @@ p{
   background: -webkit-linear-gradient(left, rgba(26,188,156,1) 0%, rgba(26,188,156,1) 17%, rgba(46,204,113,1) 17%, rgba(46,204,113,1) 38%, rgba(52,152,219,1) 38%, rgba(52,152,219,1) 58%, rgba(155,89,182,1) 58%, rgba(155,89,182,1) 78%, rgba(231,76,60,1) 78%, rgba(231,76,60,1) 99%);
   background: linear-gradient(to right, rgba(26,188,156,1) 0%, rgba(26,188,156,1) 17%, rgba(46,204,113,1) 17%, rgba(46,204,113,1) 38%, rgba(52,152,219,1) 38%, rgba(52,152,219,1) 58%, rgba(155,89,182,1) 58%, rgba(155,89,182,1) 78%, rgba(231,76,60,1) 78%, rgba(231,76,60,1) 99%);
 }
-
+a{
+ color: var(--color-dark-blue) !important;
+}
 .section-title{
   font-size: 50px;
   font-weight: 700;
@@ -100,14 +106,14 @@ p{
   position: relative;
   text-decoration: none;
   text-align: center;
-  color: var(--color-white);
+  color: var(--color-white) !important;
   border: 1px solid var(--color-dark-blue);
   background-color: var(--color-dark-blue);
   padding: 10px;
   &:hover {
     border: 1px solid var(--color-pink);;
     // background: var(--color-red) url("https://i.postimg.cc/wBXGXbWN/pixel.png"); // 360px x 1080px
-    color: var(--color-white);
+    color: var(--color-white) !important;
     background-color: var(--color-pink);;
   }
 }

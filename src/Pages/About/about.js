@@ -31,16 +31,15 @@ export default class About extends React.Component{
             <Row className="mb-5 ">
               <Col className="text-center">
                 <h3 className="section-title">ABOUT ME</h3>
-                <p>Discover more about my professional endeavors and expertise, centered around programming and technology.<br className="d-none d-lg-block"/>primarily focused on programming and technology.</p>
+                <p>Unlock the tech realm with me! From sleek code to innovative solutions, I'm your go-to for all things programming and tech. Let's make waves in the digital world together! 🚀</p>
               </Col>
             </Row>
             <Row className="align-items-center">
               <Col lg="5">
                   <h4 className="section-subheading mb-4">Let's know more about me</h4>
-                  <p>I offer a wide range of expertise, handling all aspects of development. This includes creating appealing user interfaces with HTML, CSS, JavaScript, React, and Ecmascript, as well as designing efficient server-side architecture using Python or JavaScript (Node.js). I also have a basic understanding of Azure.</p>
-                  <p>I excel in seamless integration, optimal performance, and API development. With a strong track record of successful projects, I'm confident in surpassing your expectations.</p> 
-                  <p>Browse my portfolio to see my past achievements and experience firsthand how my skills can enhance your online presence. Let's create impactful digital experiences together to drive your business forward. </p>
-                  <p>Contact me today at manorma.bussiness@gmail.com  to discuss your project requirements and start an exciting development journey together!</p>
+                  <p>As a versatile developer, I specialize in crafting eye-catching user interfaces and building powerful server-side architectures. From HTML to React, and Python to Node.js, I have the skills to turn your ideas into digital masterpieces.</p>
+                  <p>With a proven track record of successful projects, I guarantee seamless integration, optimal performance, and captivating user experiences. Plus, I have a knack for API development and a basic understanding of Azure for all your cloud needs.</p> 
+                  <p>Reach out today at <a href='mailto:manorma.business@gmail.com'>manorma.business@gmail.com</a> and let's turn your vision into reality. Let's make waves in the digital world.</p>
               </Col>
               <Col lg="7" className='skills-sec d-none d-lg-block'>
                 <Lottie animationData={female} interactivity={interactivity} />

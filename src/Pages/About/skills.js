@@ -19,6 +19,8 @@ import photoshop from './../../images/skills/photoshop.png'
 import figma from './../../images/skills/figma.svg'
 import bitbucket from './../../images/skills/bitbucket.jpg'
 import lottielogo from './../../images/skills/lottie.png'
+import asana from './../../images/skills/asana.png'
+import crownpeak from './../../images/skills/crownpeak.png'
 
 import skills from "../../lottie-json/skills.json";
 import Lottie from "lottie-react";
@@ -59,12 +61,14 @@ const Skills = () => {
                   <img src={react} className="img-fluid" alt="React" title='React'/>
                   <img src={jira} className="img-fluid" alt="Jira" title='Jira'/>
                   <img src={github} className="img-fluid" alt="Github" title='Github'/>
+                  <img src={crownpeak} className="img-fluid" alt="Crownpeak" title='Crownpeak'/>
                   <img src={git} className="img-fluid" alt="Git" title='Git'/>
                   <img src={postman} className="img-fluid" alt="Postman" title='Postman'/>
                   <img src={photoshop} className="img-fluid" alt="Photoshop" title='Photoshop'/>
                   <img src={figma} className="img-fluid" alt="Figma" title='Figma'/>
                   <img src={bitbucket} className="img-fluid" alt="Bitbucket" title='Bitbucket'/>
                   <img src={lottielogo} className="img-fluid" alt="Lottie" title='Lottie'/>
+                  <img src={asana} className="img-fluid" alt="Asana" title='Asana'/>
                 </div>
               </Col>
             </Row>
