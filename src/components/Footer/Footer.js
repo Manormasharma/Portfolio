@@ -10,7 +10,7 @@ export default class Footer extends React.Component {
                 <Container>
                     <Row>
                         <Col className='text-center py-4'>
-                            <small className='pb-0'>&copy; 2023 Made by <strong>Manorma Sharma</strong></small>
+                            <small className='pb-0'>&copy; 2024 Made by <strong>Manorma Sharma</strong></small>
                         </Col>
                     </Row>
                 </Container>
