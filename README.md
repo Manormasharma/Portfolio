@@ -14,4 +14,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 # Deployment
 
 # URL 
-Production Link - https://manormasharma.github.io/portfolio/
+Production Link - https://manormasharma.github.io/Portfolio/
