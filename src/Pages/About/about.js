@@ -39,7 +39,7 @@ export default class About extends React.Component{
                   <h4 className="section-subheading mb-4">Let's know more about me</h4>
                   <p>As a versatile developer, I specialize in crafting eye-catching user interfaces and building powerful server-side architectures. From HTML to React, and Python to Node.js, I have the skills to turn your ideas into digital masterpieces.</p>
                   <p>With a proven track record of successful projects, I guarantee seamless integration, optimal performance, and captivating user experiences. Plus, I have a knack for API development and a basic understanding of Azure for all your cloud needs.</p> 
-                  <p>Reach out today at <a href='mailto:manorma.business@gmail.com'>manorma.business@gmail.com</a> and let's turn your vision into reality. Let's make waves in the digital world.</p>
+                  <p>Reach out today at <a href='mailto:manorma0501+portfolio@gmail.com'>manorma0501+portfolio@gmail.com</a> and let's turn your vision into reality. Let's make waves in the digital world.</p>
               </Col>
               <Col lg="7" className='skills-sec d-none d-lg-block'>
                 <Lottie animationData={female} interactivity={interactivity} />
