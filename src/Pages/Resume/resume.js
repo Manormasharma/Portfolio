@@ -17,10 +17,16 @@ function Resume() {
                 ability to review code effectively for glitch-free projects.
               </em></p>
               <ul>
-                <li><a href='mailto:manorma.business@gmail.com'>manorma.business@gmail.com</a></li>
+                <li><a href='mailto:manorma0501+portfolio@gmail.com'>manorma0501+portfolio@gmail.com</a></li>
               </ul>
             </div>
             {/* Summary Ends */}
+            <h3 class="resume-title">Certifications</h3>
+              <div class="resume-item">
+                <h4><a href="https://learn.microsoft.com/en-us/users/manormasharma/credentials/337dafcc365d1477" target='_blank' rel="noreferrer" >Azure Fundamentals (AZ-900)</a></h4>
+                <h5>28 July 2024</h5>
+                <p>Certification number: EAB3D9-EBC48B</p>
+              </div>
 
             <h3 class="resume-title">Education</h3>
               <div class="resume-item">
@@ -79,8 +85,23 @@ function Resume() {
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">           
             <h3 class="resume-title">Experience</h3>
             <div class="resume-item">
+              <h4>Twenety Point Nine Five Ventures Pvt. Ltd. (20p95)</h4>
+              <h4>Role: SDE-1 (Level-2)</h4>
+              <h5>Aug 2024 - Present</h5>
+              <p><em>Noida, Delhi</em></p>
+              <p className='responsibilty'><strong>Responsibilities</strong></p>
+              <ul>
+                <li>Developed and maintained responsive web applications for the company's flagship product, <strong>Humbee</strong> using React Js.</li>
+                <li>Designed and implemented reusable <strong>UI components and libraries</strong> to ensure scalability and consistency.</li>
+                <li>Evaluated the functionality, performance, and design compliance of products against <strong>design standards and customer needs</strong>.</li>
+                <li>Enhanced product stability by executing <strong>functional, integration, and regression tests</strong>.</li>
+                <li>Managed and improved the <strong>Humbee Support Portal</strong> and <strong>Distributor Portal</strong> for better user experience and functionality.</li>
+                <li>Utilized version control and project management tools like <strong>Git, Bitbucket, Confluence, and Jira</strong> for efficient code management, collaboration, and deployment.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
               <h4>Brickwork - Senior Web Developer</h4>
-              <h5>Jan 2024 - Present</h5>
+              <h5>Jan 2024 - July 2024</h5>
               <p><em>Bengaluru, Karnataka</em></p>
               <p className='responsibilty'><strong>Responsibilities</strong></p>
               <ul>
@@ -116,7 +137,7 @@ function Resume() {
                     <li>Acquired proficiency in technologies such as Sass, Gulp, Bitbucket, and PHP to enhance skill set and meet evolving project demands.</li>
                 </ul>
             </div>
-            <div class="resume-item">
+            {/* <div class="resume-item">
                 <h4>Hedkey Pvt. Ltd. - Web Developer Intern</h4>
                 <h5>Jul 2020 - Oct 2020</h5>
                 <p><em>Delhi, Delhi</em></p>
@@ -129,7 +150,7 @@ function Resume() {
                   <li>Proficient in WordPress, PHP, Photoshop, XD, jQuery.</li>
                   <li>Learned Technologies: Wordpress, PHP, Photoshop, XD, JQuery</li>
                 </ul>
-            </div>
+            </div> */}
             
             {/* Work History Ends */}
           </div>

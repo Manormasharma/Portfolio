@@ -24,16 +24,16 @@ export default class Header extends React.Component {
                 <div class="coloredborder fixed-top"></div>
                 <Navbar color="white" container expand="md" className='py-3 w-100 fixed-top'>
                     <div className='navbar-brand'>
-                        <Link to="/portfolio"> Manorma Sharma</Link>
+                        <Link to="/Portfolio"> Manorma Sharma</Link>
                     </div>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar className='justify-content-end'>
                         <Nav className="mr-auto align-items-center flex-row" navbar>
                             <NavItem className='me-4'>
-                                <Link to="/portfolio/resume">Resume</Link>
+                                <Link to="/Portfolio/resume">Resume</Link>
                             </NavItem>       
                             <NavItem className='me-4'>   
-                                <NavLink className='' aria-label="email" href="mailto:manorma.bussiness@gmail.com?subject=Mail from Manorma Portfolio">
+                                <NavLink className='' aria-label="email" href="mailto:manorma0501+portfolio@gmail.com?subject=Mail from Manorma Portfolio">
                                     <img src={gmail} className="img-fluid" width={25}  alt='gmail'/>
                                 </NavLink>
                             </NavItem>
@@ -42,12 +42,6 @@ export default class Header extends React.Component {
                                     <img src={linkedin} className="img-fluid" width={25} alt='linkedin' />
                                 </NavLink>
                             </NavItem>
-                                                
-                            {/* <NavItem className=''>
-                                <NavLink className="nav-link" href="#project">
-                                    Project
-                                </NavLink>
-                            </NavItem> */}
                         </Nav>
                     </Collapse>
                 </Navbar>
