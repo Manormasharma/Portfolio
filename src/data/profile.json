@@ -1,0 +1,37 @@
+{
+  "name": "Manorma Sharma",
+  "title": "Software Engineer (Full Stack — React.js / Node.js)",
+  "location": "Delhi 110041",
+  "phone": "+91 8512893890",
+  "tagline": "Full Stack Software Engineer",
+  "heroIntro": "5+ years building production-scale web applications across React.js, Node.js, and cloud technologies — from frontend architecture and performance optimization to secure Node.js/Express backends and REST APIs.",
+  "heroBioBullets": [
+    "Full stack engineer across React.js, Node.js, and cloud infrastructure",
+    "Track record of leading architecture redesigns and measurable performance gains",
+    "Experience mentoring engineers across fast-paced, cross-functional teams"
+  ],
+  "aboutIntro": "Software Engineer with 5+ years building production-scale web applications across React.js, Node.js, and cloud technologies.",
+  "bioParagraphs": [
+    "I work across the full stack — from component architecture, state management, and performance optimization (Core Web Vitals, code splitting, CDN delivery) to Node.js/Express backends, REST APIs, and secure authentication with JWT and RBAC.",
+    "I have a track record of leading architecture redesigns, delivering measurable performance gains, and mentoring engineers across fast-paced, cross-functional teams — with growing hands-on experience in AI/GenAI tooling (agentic workflows, RAG, local LLM inference)."
+  ],
+  "summary": "Software Engineer with 5+ years building production-scale web applications across React.js, Node.js, and cloud technologies. Experienced across the full stack — from component architecture, state management, and performance optimization (Core Web Vitals, code splitting, CDN delivery) to Node.js/Express backends, REST APIs, and secure authentication with JWT and RBAC. Track record of leading architecture redesigns, delivering measurable performance gains, and mentoring engineers across fast-paced, cross-functional teams.",
+  "coreSkills": [
+    "Frontend Architecture",
+    "Cross-Functional Communication",
+    "Requirement Analysis",
+    "Agile/Scrum Delivery",
+    "CI/CD Automation & IaC (Terraform)",
+    "Technical Mentorship & Code Reviews",
+    "Cloud Infrastructure & Scalable Deployment",
+    "Analytical & Critical Thinking"
+  ],
+  "languages": ["Hindi", "English"],
+  "yearsExperience": "5+",
+  "contactEmail": "mannuu0501@gmail.com",
+  "socialLinks": [
+    { "platform": "github", "url": "https://github.com/Manormasharma" },
+    { "platform": "linkedin", "url": "https://www.linkedin.com/in/manorma-sharma/" },
+    { "platform": "email", "url": "mailto:mannuu0501@gmail.com?subject=Mail from Manorma Portfolio" }
+  ]
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "company": "Humbee",
+    "role": "Software Development Engineer",
+    "startDate": "Aug 2024",
+    "endDate": "Current",
+    "location": "Noida, India",
+    "bullets": [
+      "Led frontend architecture redesign of a multi-role B2B platform serving distributors, dealers, retailers, and manufacturers, supporting 4 distinct user roles across a single React.js codebase.",
+      "Built and standardized **30+ reusable React.js components**, improving development velocity and cutting new-feature build time.",
+      "Improved Web Core Vitals and **reduced page load time by ~30%** through lazy loading, code splitting, and CDN caching.",
+      "Implemented secure **JWT authentication and Role-Based Access Control (RBAC)** across all platform user types.",
+      "Integrated **Adobe Marketo** for automated lead capture, reducing manual marketing handoffs and improving lead-to-workflow turnaround.",
+      "Configured **AWS CloudFront CDN** for optimized global content delivery, reducing asset latency for end users.",
+      "Collaborated cross-functionally with backend and DevOps teams to streamline deployment pipelines and improve release scalability."
+    ],
+    "visible": true,
+    "order": 1
+  },
+  {
+    "company": "Brickwork",
+    "role": "Senior Web Developer",
+    "startDate": "Jan 2024",
+    "endDate": "Jul 2024",
+    "location": "Bengaluru, India",
+    "bullets": [
+      "Gathered and translated requirements from US-based enterprise clients into scalable CMS solutions on tight delivery timelines.",
+      "Developed and customized enterprise web applications using **Crownpeak CMS** for multiple client accounts.",
+      "Improved application performance and stability through structured refactoring, debugging, and code review.",
+      "Delivered features within Agile sprints, coordinating with cross-functional and distributed teams."
+    ],
+    "visible": true,
+    "order": 2
+  },
+  {
+    "company": "US-Based Event Technology Platform",
+    "role": "Freelance Web Developer",
+    "startDate": "May 2023",
+    "endDate": "Mar 2024",
+    "location": "Remote",
+    "bullets": [
+      "Developed responsive event websites and attendee management systems for enterprise clients.",
+      "Built dynamic registration workflows and **role-based access control** systems for high-traffic events.",
+      "Delivered and optimized high-traffic event platforms, ensuring stable performance during peak registration windows."
+    ],
+    "visible": true,
+    "order": 3
+  },
+  {
+    "company": "HackerEarth",
+    "role": "Web UI Developer",
+    "startDate": "May 2022",
+    "endDate": "Jun 2023",
+    "location": "Bengaluru, India",
+    "bullets": [
+      "Migrated legacy WordPress applications to **React.js** using REST APIs, improving maintainability and load performance.",
+      "Integrated **HubSpot** for marketing automation and analytics, improving campaign tracking accuracy.",
+      "Improved SEO, accessibility (WCAG), and Web Core Vitals scores across key product pages.",
+      "Built reusable UI components aligned with the product roadmap, supporting faster feature delivery."
+    ],
+    "visible": true,
+    "order": 4
+  },
+  {
+    "company": "Oceanic Studio",
+    "role": "Front-End Developer",
+    "startDate": "Nov 2020",
+    "endDate": "Apr 2022",
+    "location": "Delhi, India",
+    "bullets": [
+      "Developed responsive, cross-browser UI using HTML, CSS, and JavaScript for client-facing web products.",
+      "Customized WordPress themes and integrated backend APIs to extend site functionality.",
+      "Improved performance and maintainability through modular, component-based coding practices."
+    ],
+    "visible": true,
+    "order": 5
+  }
+]

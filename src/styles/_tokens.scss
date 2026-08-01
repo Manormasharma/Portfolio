@@ -1,0 +1,62 @@
+// Light (teal accent) is this site's default identity. Dark stays available
+// as an opt-in via the ThemeToggle for visitors who prefer it.
+:root {
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-pill: 999px;
+
+  --font-display: 'Sora', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', 'DM Mono', monospace;
+
+  --color-bg:         #ffffff;
+  --color-bg-translucent: rgba(255, 255, 255, 0.85);
+  --color-surface:    #f4f6fb;
+  --color-surface-2:  #e9edf6;
+  --color-text:       #0a192f;
+  --color-heading:    #010409;
+  --color-text-muted: #4b5673;
+  --color-border:     rgba(10, 25, 47, 0.1);
+
+  --color-accent:     #0d9488;
+  --color-accent-soft: rgba(13, 148, 136, 0.1);
+  --color-accent-2:   #0d9488;
+  --color-accent-2-soft: rgba(13, 148, 136, 0.1);
+
+  --color-white:      #ffffff;
+  --color-black:      #0a192f;
+
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.1);
+  --shadow-lg: 0 20px 48px rgba(15, 23, 42, 0.16);
+
+  // deprecated aliases kept during migration so any un-audited scss still resolves
+  --color-dark-blue:  var(--color-accent);
+  --color-pink:       var(--color-accent-2);
+}
+
+// Opt-in dark mode — enterprise navy/charcoal with a vibrant blue primary
+// accent and a warm amber secondary accent (reference: xicom.biz).
+[data-theme="dark-indigo"] {
+  --color-bg:         #0d1526;
+  --color-bg-translucent: rgba(13, 21, 38, 0.85);
+  --color-surface:    #131f36;
+  --color-surface-2:  #1a2942;
+  --color-text:       #e7ecf5;
+  --color-heading:    #ffffff;
+  --color-text-muted: #93a1b8;
+  --color-border:     rgba(231, 236, 245, 0.1);
+
+  --color-accent:     #2f7dfa;
+  --color-accent-soft: rgba(47, 125, 250, 0.14);
+  --color-accent-2:   #f5943a;
+  --color-accent-2-soft: rgba(245, 148, 58, 0.14);
+
+  --color-white:      #0d1526;
+  --color-black:      #070c17;
+
+  --shadow-sm: 0 10px 30px -15px rgba(0, 0, 0, 0.6);
+  --shadow-md: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+  --shadow-lg: 0 30px 60px -20px rgba(0, 0, 0, 0.8);
+}

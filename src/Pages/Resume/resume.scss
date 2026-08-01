@@ -1,75 +1,75 @@
-$color_1: #45505b;
-$color_2: #0563bb;
-$font-family_1: "Poppins", sans-serif;
-
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
 .resume {
 	.resume-title {
-		font-size: 26px;
-		font-weight: 700;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		color:var(--color-dark-blue);
+		font-family: var(--font-display);
+		font-size: 22px;
+		font-weight: 800;
+		margin-top: 36px;
+		margin-bottom: 16px;
+		color: var(--color-text);
+
+		&:first-child {
+			margin-top: 0;
+		}
 	}
 	.resume-item {
-		padding: 0 0 20px 20px;
-		margin-top: -2px;
-		border-left: 2px solid var(--color-dark-blue);
-		position: relative;
+		background: var(--color-surface);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-md);
+		padding: 20px 22px;
+		margin-bottom: 14px;
+		transition: border-color 0.2s ease;
+
+		&:hover {
+			border-color: var(--color-accent);
+		}
+
 		.responsibilty{
-			color: var(--color-pink);
+			color: var(--color-accent-2);
 		}
 		h4 {
-			line-height: 18px;
-			font-size: 18px;
-			font-weight: 600;
-			text-transform: uppercase;
-			font-family: $font-family_1;
-			color:var(--color-dark-blue);
-			margin-bottom: 10px;
+			line-height: 20px;
+			font-size: 16px;
+			font-weight: 700;
+			font-family: var(--font-display);
+			color: var(--color-text);
+			margin-bottom: 8px;
+
 			a {
-				line-height: 18px;
-				font-size: 18px;
-				font-weight: 600;
-				text-transform: uppercase;
-				font-family: $font-family_1;
-				color:var(--color-dark-blue);
-				margin-bottom: 10px;
+				line-height: 20px;
+				font-size: 16px;
+				font-weight: 700;
+				font-family: var(--font-display);
+				color: var(--color-accent) !important;
+				margin-bottom: 0;
 			}
 		}
 		h5 {
-			font-size: 16px;
-			background: #e4edf9;
-			padding: 5px 15px;
+			font-family: var(--font-mono);
+			font-size: 12px;
+			background: var(--color-surface-2);
+			color: var(--color-accent);
+			padding: 4px 12px;
+			border-radius: var(--radius-sm);
 			display: inline-block;
-			font-weight: 600;
+			font-weight: 500;
 			margin-bottom: 10px;
+		}
+		p {
+			margin-bottom: 0;
 		}
 		ul {
 			padding-left: 20px;
+			margin-bottom: 0;
 			li {
-				padding-bottom: 10px;
+				padding-bottom: 8px;
 			}
-		}
-		&:last-child {
-			padding-bottom: 0;
-		}
-		&::before {
-			content: "";
-			position: absolute;
-			width: 16px;
-			height: 16px;
-			border-radius: 50px;
-			left: -9px;
-			top: 0;
-			background: #fff;
-			border: 2px solid var(--color-dark-blue);
 		}
 	}
 }
+
+.core-skills-tags {
+	margin-top: 12px;
+	display: flex;
+	flex-wrap: wrap;
+}
+

@@ -1,23 +1,70 @@
 .herobanner{
-    // position: relative;
-    // height: calc(80vh - 4px);
+    min-height: calc(100vh - 88px);
     display: flex;
     align-items: center;
-    justify-content: center;
-    z-index: -1;
-    color: var(--color-dark-blue);
-    h1{
-        font-weight: 900;
-        font-size: 65px;
-        font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-greeting {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    color: var(--color-accent);
+    margin-bottom: 12px;
+}
+
+.hero-name {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--color-heading);
+    margin-bottom: 4px;
+}
+
+.hero-tagline {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1.1;
+    color: var(--color-text-muted);
+    margin-bottom: 24px;
+}
+
+.hero-lede {
+    font-size: 18px;
+    max-width: 560px;
+    color: var(--color-text-muted);
+}
+
+.hero-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+
+    li {
+        font-family: var(--font-mono);
+        font-size: 15px;
+        color: var(--color-text-muted);
+        margin-bottom: 10px;
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
     }
 }
 
+.hero-bullet-marker {
+    color: var(--color-accent);
+}
 
 @media (max-width:1024px) {
-    .herobanner{
-        h1{
-            font-size: 40px;
-        }
+    .hero-name{
+        font-size: 38px;
+    }
+    .hero-tagline {
+        font-size: 26px;
     }
 }
