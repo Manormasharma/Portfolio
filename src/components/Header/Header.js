@@ -50,14 +50,14 @@ export default function Header() {
                     </NavItem>
                     {emailLink && (
                       <NavItem className='me-3'>
-                          <NavLink className='social-icon-link' aria-label="email" href={emailLink.url}>
+                          <NavLink className='social-icon-link d-flex' aria-label="email" href={emailLink.url}>
                               <img src={gmail} className="img-fluid" width={18} alt='gmail'/>
                           </NavLink>
                       </NavItem>
                     )}
                     {linkedinLink && (
                       <NavItem className='me-3'>
-                          <NavLink className='social-icon-link' href={linkedinLink.url} target="_blank">
+                          <NavLink className='social-icon-link d-flex' href={linkedinLink.url} target="_blank">
                               <img src={linkedin} className="img-fluid" width={18} alt='linkedin' />
                           </NavLink>
                       </NavItem>
