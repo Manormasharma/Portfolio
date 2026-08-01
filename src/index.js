@@ -4,12 +4,15 @@ import './index.scss';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from './context/ThemeContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
+        <ThemeProvider>
+            <BrowserRouter basename="/Portfolio">
+                <App />
+            </BrowserRouter>
+        </ThemeProvider>
     </React.StrictMode>
 );
 

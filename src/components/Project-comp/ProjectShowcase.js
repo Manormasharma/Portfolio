@@ -1,32 +1,33 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 import "./project-showcase.scss"
+
 function ProjectShowcase(props) {
   return (
-    <div className='project py-4 py-lg-5 row no-gutter'>
-      <div className='col-lg-6 mb-lg-5 pb-lg-5'>
-        <a href={`${props.url}`}  target='_blank' rel="noreferrer" >
-          <img class="img-fluid" src={props.projectImage} alt="project img" />
-        </a>
-      </div>
-      <div className='col-lg-5 offset-lg-1 py-4 p-lg-0'>
-        <div class="work-info">
-          <div className='d-flex justify-content-between align-items-center pb-3'>
-            <h3 className=''><strong>{props.projectName}</strong></h3> 
-           
-          </div>
-          <p className=''>{props.desc}</p>
-          <div className='pb-3 d-flex align-items-center flex-wrap'>
-            <p className='me-4'>Technology Used : </p>
-            {
-              props.techlist.map((techlistItems) =>  
-                <p><span class="badge bg-pink me-2">{techlistItems}</span></p>
-              )
-            }
-            </div>
-            <a href={`${props.url}`}  target="_blank" className='btn-custom' rel="noreferrer" >Take a look!</a>
+    <motion.div
+      className='project-card'
+      layout
+      initial={{ opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+      whileHover={{ y: -6 }}
+    >
+      <a href={props.url} target="_blank" rel="noreferrer" className="project-card-media">
+        <img src={props.projectImage} alt={props.projectName} />
+        <span className="project-card-overlay">Visit Live Site</span>
+      </a>
+      <div className="project-card-body">
+        <h3>{props.projectName}</h3>
+        <p>{props.desc}</p>
+        <div className='project-card-tags'>
+          {props.techlist.map((techlistItems) => (
+            <span className="badge bg-pink me-2 mb-2" key={techlistItems}>{techlistItems}</span>
+          ))}
         </div>
-      </div> 
-    </div>
+        <a href={props.url} target="_blank" className='btn-outline' rel="noreferrer">Take a look!</a>
+      </div>
+    </motion.div>
   )
 }
 

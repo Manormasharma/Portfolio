@@ -1,0 +1,9 @@
+{
+  "note": "Fallback grounding data, mirrors src/data/*.json in the main app at scaffold time. Update this alongside the CMS once Sanity is live, or better: keep it in sync via the fetch-context step below.",
+  "profile": {
+    "name": "Manorma Sharma",
+    "title": "Software Engineer (Full Stack — React.js / Node.js)",
+    "summary": "Software Engineer with 5+ years building production-scale web applications across React.js, Node.js, and cloud technologies. Experienced across the full stack — from component architecture, state management, and performance optimization to Node.js/Express backends, REST APIs, and secure authentication with JWT and RBAC.",
+    "contactEmail": "mannuu0501@gmail.com"
+  }
+}
