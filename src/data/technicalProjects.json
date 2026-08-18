@@ -1,0 +1,36 @@
+[
+  {
+    "name": "TradeExpert",
+    "subtitle": "Multi-Agent Stock Analysis Assistant",
+    "bullets": [
+      "Developed a multi-agent stock analysis assistant in Python using Google ADK, supporting Gemini, Ollama, and LM Studio models.",
+      "Built AI-powered workflows for stock screening, company research, financial analysis, and market trend evaluation."
+    ],
+    "tech": ["Python", "Google ADK", "Gemini API", "Ollama", "LM Studio", "Yahoo Finance API"],
+    "url": "https://github.com/Manormasharma/TradeExpert",
+    "order": 1
+  },
+  {
+    "name": "AI-Text-Assistant",
+    "subtitle": "Privacy-First Local AI Assistant",
+    "bullets": [
+      "Built a privacy-first AI text assistant using React, Node.js, and Ollama for fully local LLM inference with no external API calls.",
+      "Implemented text enhancement features including summarization, rewriting, grammar correction, and content generation."
+    ],
+    "tech": ["React", "Node.js", "Ollama"],
+    "url": "https://github.com/Manormasharma/AI-Text-Assistant",
+    "order": 2
+  },
+  {
+    "name": "Homelab Infrastructure Setup",
+    "subtitle": "",
+    "bullets": [
+      "Built and maintained a Proxmox-based homelab with Docker and Linux containers.",
+      "Deployed self-hosted apps (AdGuardHome, Traefik, n8n, Portainer) with reverse proxy and SSL.",
+      "Designed private subnet architecture with NAT, DHCP, DNS filtering, port forwarding, and LAN segmentation."
+    ],
+    "tech": ["Proxmox", "Docker", "Linux", "Traefik", "AdGuardHome", "NAT", "DHCP", "DNS", "n8n"],
+    "url": null,
+    "order": 3
+  }
+]

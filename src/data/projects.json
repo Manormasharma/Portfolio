@@ -1,0 +1,74 @@
+[
+  {
+    "projectName": "Humbee",
+    "slug": "humbee",
+    "image": "humbeePlatform",
+    "techlist": ["WORDPRESS", "CUSTOM THEME", "CUSTOM PLUGINS"],
+    "url": "https://humbee.in/",
+    "desc": "Marketing site for Humbee, a multi-role B2B platform connecting manufacturers, distributors, dealers, and retailers. Built on WordPress with a custom theme and custom plugins to communicate the platform's story and drive lead capture.",
+    "order": 0
+  },
+  {
+    "projectName": "Humbee Partner Channel",
+    "slug": "humbee-channel",
+    "image": "humbeeChannel",
+    "techlist": ["REACT.JS", "JWT AUTH", "RBAC"],
+    "url": "https://channel.humbee.in/login",
+    "desc": "Dedicated login portal giving distributors, dealers, and retailers secure access to their side of the Humbee value chain, backed by JWT authentication and role-based access control.",
+    "order": 0.1
+  },
+  {
+    "projectName": "Humbee Support Portal",
+    "slug": "humbee-support",
+    "image": "humbeeSupport",
+    "techlist": ["NEXT.JS", "JWT AUTH", "RBAC", "AWS CLOUDFRONT"],
+    "url": "https://support-dev.humbee.in/login",
+    "desc": "Support and account-access portal for the Humbee platform, built with Next.js and secured with JWT authentication and role-based access control, backed by CloudFront-delivered assets.",
+    "order": 0.2
+  },
+  {
+    "projectName": "Hire 1o1",
+    "slug": "hire-1o1",
+    "image": "hire1o1",
+    "techlist": ["HTML 5", "BOOTSTRAP 4", "JAVASCRIPT", "SCSS"],
+    "url": "https://hire101.hackerearth.com/",
+    "desc": "Landing site for HackerEarth's Hire 1o1 international recruiter roadshow. Built responsive, interactive layouts with HTML, SCSS, and JavaScript on top of Bootstrap to keep the recruiting-leader audience engaged.",
+    "order": 1
+  },
+  {
+    "projectName": "Jassi Bindra",
+    "slug": "jassi-bindra",
+    "image": "jassiBindra",
+    "techlist": ["HTML 5", "CSS 3", "PHP", "JAVASCRIPT"],
+    "url": "http://www.jassibindradesigns.com/",
+    "desc": "Portfolio site for an interior design and renovation studio. Delivered a full-bleed, image-driven layout with HTML, CSS, and JavaScript that puts the client's project photography front and center.",
+    "order": 2
+  },
+  {
+    "projectName": "Black Friday",
+    "slug": "black-friday",
+    "image": "blackFriday",
+    "techlist": ["HTML 5", "SCSS", "WORDPRESS", "JAVASCRIPT"],
+    "url": "https://www.hackerearth.com/recruit/black-friday-deal/",
+    "desc": "Seasonal promotional campaign page for HackerEarth's recruiter products. Built a fast, conversion-focused interface with HTML, SCSS, and JavaScript to drive sign-ups during the Black Friday sale window.",
+    "order": 3
+  },
+  {
+    "projectName": "Spherecom",
+    "slug": "spherecom",
+    "image": "spherecom",
+    "techlist": ["WORDPRESS CMS"],
+    "url": "https://spherecom.in/",
+    "desc": "Corporate site for Sphere Com Services, a manufacturer of THINUX VHF/UHF RF transceivers. Built on WordPress with a custom theme to clearly communicate the company's products and brand story.",
+    "order": 4
+  },
+  {
+    "projectName": "Deskify",
+    "slug": "ryaanace",
+    "image": "deskify",
+    "techlist": ["WORDPRESS", "SCSS", "PHP", "JAVASCRIPT"],
+    "url": "https://deskify.online/",
+    "desc": "E-commerce storefront for Deskify Crafts, selling ergonomic office chairs and furniture. Built a WordPress/PHP theme with SCSS and JavaScript covering product catalog browsing, categories, and cart functionality.",
+    "order": 5
+  }
+]

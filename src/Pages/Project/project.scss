@@ -1,6 +1,5 @@
-.bg-image{
-    // background-image: url("./../../images/backgrounds/bg2.jpg");
-    box-shadow: 0 -110px 100px rgb(0 0 0 / 10%);
-    // background-repeat: no-repeat;
-    // background-size: cover;
+#portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 28px;
 }
