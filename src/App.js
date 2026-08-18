@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Home from './Pages/Homepage';
 import Footer from './components/Footer';
 import Resume from './Pages/Resume/resume';
-import ChatbotSlot from './components/ChatbotSlot/ChatbotSlot';
+import ChatWidget from './components/ChatWidget/ChatWidget';
 import {
   Route,Routes
 } from 'react-router-dom'
@@ -18,7 +18,7 @@ function App() {
             </Routes>
           </div>
         <Footer />
-        <ChatbotSlot />
+        <ChatWidget />
     </>
   );
 }
