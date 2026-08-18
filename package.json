@@ -23,6 +23,7 @@
     "prestart": "npm run fetch-content",
     "prebuild": "npm run fetch-content",
     "start": "react-scripts start",
+    "dev:api": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
@@ -48,6 +49,9 @@
     ]
   },
   "devDependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
     "gh-pages": "^5.0.0",
     "react-router-dom": "^6.6.1",
     "sass": "^1.57.0"
