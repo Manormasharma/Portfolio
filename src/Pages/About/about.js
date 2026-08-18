@@ -58,6 +58,7 @@ export default function About() {
                   variants={fadeUp}
                 >
                   <h4 className="section-subheading mb-4">Let's know more about me</h4>
+<<<<<<< Updated upstream
                   {profile.bioParagraphs.map((paragraph, index) => (
                     <p key={index}>{paragraph}</p>
                   ))}
@@ -87,4 +88,20 @@ export default function About() {
       <Skills />
     </>
   );
+=======
+                  <p>Software Engineer with 5+ years building production-scale web applications across React.js, Node.js, and cloud technologies. I work across the full stack — from component architecture and state management to Express backends, REST APIs, JWT authentication, and RBAC.</p>
+                  <p>I've led architecture redesigns, achieved ~30% page load improvements through Core Web Vitals optimization, and set up cloud delivery pipelines on AWS CloudFront. I also explore AI and GenAI — building agentic workflows with Google ADK, RAG pipelines, and local LLMs via Ollama.</p>
+                  <p>Reach out at <a href='mailto:mannuu0501@gmail.com'>mannuu0501@gmail.com</a> — let's build something great.</p>
+              </Col>
+              <Col lg="7" className='skills-sec d-none d-lg-block'>
+                <Lottie animationData={female} interactivity={interactivity} />
+              </Col>
+            </Row>
+          </Container>
+        </div>   
+        <Skills />
+      </>
+    );
+  }
+>>>>>>> Stashed changes
 }
