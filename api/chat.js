@@ -23,7 +23,7 @@ async function callAnthropic(messages) {
     },
     body: JSON.stringify({
       model: 'claude-sonnet-4-6',
-      max_tokens: 500,
+      max_tokens: 150,
       system: SYSTEM_PROMPT,
       messages,
     }),
@@ -54,7 +54,7 @@ async function callGemini(messages) {
     body: JSON.stringify({
       systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
       contents,
-      generationConfig: { maxOutputTokens: 500 },
+      generationConfig: { maxOutputTokens: 150 },
     }),
   });
 
