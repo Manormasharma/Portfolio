@@ -1,0 +1,17 @@
+name = "portfolio-chatbot-worker"
+main = "src/index.ts"
+compatibility_date = "2024-09-01"
+
+# Set which provider is active. Secrets/vars for the chosen provider must be
+# configured separately (see README.md) — nothing here is a real credential.
+[vars]
+CHATBOT_PROVIDER = "anthropic" # 'anthropic' | 'gemini' | 'ollama' | 'anythingllm'
+ALLOWED_ORIGIN = "https://manormasharma.github.io"
+SANITY_PROJECT_ID = ""
+SANITY_DATASET = "production"
+
+# Rate limiting state (per-IP sliding window). Create with:
+#   wrangler kv namespace create RATE_LIMIT_KV
+[[kv_namespaces]]
+binding = "RATE_LIMIT_KV"
+id = "3208f70607694bd1b390acf95b83948a"
