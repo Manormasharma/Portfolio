@@ -1,0 +1,220 @@
+// Chat widget — uses portfolio's existing CSS vars: --color-dark-blue, --color-pink, --color-white
+// Font: DM Sans (already loaded in App.scss)
+
+$widget-width: 360px;
+$widget-height: 480px;
+$z-widget: 9999;
+
+.chat-widget {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: $z-widget;
+  font-family: 'DM Sans', sans-serif;
+}
+
+// Floating action button
+.chat-fab {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-dark-blue);
+  color: var(--color-white);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(2, 53, 117, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.15s;
+
+  &:hover {
+    background: var(--color-pink);
+    transform: scale(1.08);
+  }
+}
+
+// Chat panel
+.chat-panel {
+  position: absolute;
+  bottom: 68px;
+  right: 0;
+  width: $widget-width;
+  height: $widget-height;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(2, 53, 117, 0.18);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideUp 0.2s ease;
+
+  @media (max-width: 420px) {
+    width: 100vw;
+    right: -28px;
+    bottom: 68px;
+    border-radius: 12px 12px 0 0;
+    height: 70vh;
+  }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.chat-header {
+  background: var(--color-dark-blue);
+  color: var(--color-white);
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.chat-close {
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  opacity: 0.8;
+  &:hover { opacity: 1; }
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-bubble {
+  max-width: 85%;
+  padding: 10px 14px;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  word-break: break-word;
+
+  &--user {
+    align-self: flex-end;
+    background: var(--color-dark-blue);
+    color: var(--color-white);
+    border-bottom-right-radius: 4px;
+  }
+
+  &--assistant {
+    align-self: flex-start;
+    background: #f0f4fb;
+    color: #333;
+    border-bottom-left-radius: 4px;
+  }
+}
+
+// Typing indicator
+.chat-typing {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 16px;
+
+  span {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-dark-blue);
+    opacity: 0.5;
+    animation: blink 1.2s infinite;
+
+    &:nth-child(2) { animation-delay: 0.2s; }
+    &:nth-child(3) { animation-delay: 0.4s; }
+  }
+}
+
+@keyframes blink {
+  0%, 80%, 100% { opacity: 0.2; transform: scale(0.85); }
+  40%            { opacity: 1;   transform: scale(1); }
+}
+
+.chat-error {
+  background: #fff0f0;
+  border: 1px solid #ffd5d5;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #c0392b;
+  align-self: flex-start;
+  max-width: 90%;
+
+  p { margin: 0 0 8px; color: #c0392b; font-size: 13px; }
+
+  button {
+    background: var(--color-pink);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    &:hover { opacity: 0.85; }
+  }
+}
+
+.chat-input-row {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid #eaeaea;
+  flex-shrink: 0;
+}
+
+.chat-input {
+  flex: 1;
+  border: 1px solid #d0d7e3;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  outline: none;
+  transition: border-color 0.2s;
+
+  &:focus {
+    border-color: var(--color-dark-blue);
+  }
+
+  &:disabled {
+    background: #f5f5f5;
+    cursor: not-allowed;
+  }
+}
+
+.chat-send {
+  background: var(--color-dark-blue);
+  color: var(--color-white);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover:not(:disabled) {
+    background: var(--color-pink);
+  }
+
+  &:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+  }
+}
