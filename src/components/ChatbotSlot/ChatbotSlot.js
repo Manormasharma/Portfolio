@@ -5,10 +5,28 @@ import Icon from '../Icon/Icon';
 import { OPEN_CHAT_EVENT } from '../../lib/site';
 import './ChatbotSlot.scss';
 
-const API_URL = process.env.REACT_APP_CHATBOT_API_URL;
+// Cloudflare Worker endpoint (worker.js) — set in .env.production for builds,
+// or .env.development.local to point at `npm run dev:api` locally.
+const API_URL = process.env.REACT_APP_CHAT_API_URL;
+
+// Limits enforced by worker.js / api/chat.js
+const MAX_TURNS = 20;
+const MAX_CHARS = 1000;
+
+// The backend expects [{ role, content }] starting with a user turn, so the
+// local-only welcome message is dropped and old turns are trimmed.
+function toApiMessages(messages) {
+  const turns = messages
+    .filter((m) => !m.local)
+    .map((m) => ({ role: m.role, content: m.text.slice(0, MAX_CHARS) }))
+    .slice(-(MAX_TURNS - 1));
+  while (turns.length && turns[0].role !== 'user') turns.shift();
+  return turns;
+}
 
 const WELCOME_MESSAGE = {
   role: 'assistant',
+  local: true,
   text: `Hi! I'm ${profile.name}'s AI assistant. Ask me about her skills, experience, or projects.`,
 };
 
@@ -40,14 +58,10 @@ export default function ChatbotSlot() {
     setMessages(nextMessages);
     setInput('');
 
+    const fallback = `Sorry, I couldn't answer that right now. You can reach ${profile.name.split(' ')[0]} directly at ${profile.contactEmail}.`;
+
     if (!API_URL) {
-      setMessages([
-        ...nextMessages,
-        {
-          role: 'assistant',
-          text: "The chatbot isn't configured yet — set REACT_APP_CHATBOT_API_URL to your Cloudflare Worker endpoint once a provider (Claude, Gemini, Ollama, or AnythingLLM) is set up.",
-        },
-      ]);
+      setMessages([...nextMessages, { role: 'assistant', local: true, text: fallback }]);
       return;
     }
 
@@ -56,15 +70,13 @@ export default function ChatbotSlot() {
       const response = await fetch(API_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: text,
-          history: nextMessages.map((m) => ({ role: m.role, text: m.text })),
-        }),
+        body: JSON.stringify({ messages: toApiMessages(nextMessages) }),
       });
-      const data = await response.json();
-      setMessages([...nextMessages, { role: 'assistant', text: data.reply || "Sorry, I couldn't generate a response." }]);
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok || !data.reply) throw new Error(data.error || `HTTP ${response.status}`);
+      setMessages([...nextMessages, { role: 'assistant', text: data.reply }]);
     } catch (err) {
-      setMessages([...nextMessages, { role: 'assistant', text: "Something went wrong reaching the chatbot. Please try again later." }]);
+      setMessages([...nextMessages, { role: 'assistant', local: true, text: fallback }]);
     } finally {
       setIsSending(false);
     }
@@ -103,6 +115,7 @@ export default function ChatbotSlot() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Ask a question…"
+                maxLength={MAX_CHARS}
                 aria-label="Chat message"
               />
               <button type="submit" disabled={isSending || !input.trim()}>Send</button>

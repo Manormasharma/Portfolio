@@ -23,7 +23,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# chatbot worker (separate deployable, own node_modules)
-worker/node_modules
-worker/.wrangler
+# wrangler local state
+.wrangler
 

@@ -26,7 +26,6 @@ jobs:
         env:
           SANITY_PROJECT_ID: ${{ secrets.SANITY_PROJECT_ID }}
           SANITY_DATASET: ${{ vars.SANITY_DATASET }}
-          REACT_APP_CHATBOT_API_URL: ${{ vars.REACT_APP_CHATBOT_API_URL }}
         run: npm run build
 
       - name: Deploy to gh-pages
