@@ -21,7 +21,7 @@
       // apply the saved theme before first paint (see src/context/ThemeContext.js)
       (function () {
         try {
-          var t = localStorage.getItem('theme');
+          var t = localStorage.getItem('theme-v2');
           document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
         } catch (e) {
           document.documentElement.setAttribute('data-theme', 'dark');

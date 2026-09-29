@@ -6,9 +6,12 @@ const ThemeContext = createContext(null);
 // the stored value before first paint so there's no flash on load.
 const DEFAULT_THEME = 'dark';
 const VALID_THEME_IDS = ['dark', 'light'];
+// v2: the previous site wrote 'light' to `theme` for every visitor, so that
+// key can't be trusted as an explicit choice. Only a toggle writes this one.
+export const THEME_STORAGE_KEY = 'theme-v2';
 
 function getInitialTheme() {
-  const stored = window.localStorage.getItem('theme');
+  const stored = window.localStorage.getItem(THEME_STORAGE_KEY);
   return VALID_THEME_IDS.includes(stored) ? stored : DEFAULT_THEME;
 }
 
@@ -19,11 +22,15 @@ export function ThemeProvider({ children }) {
   // effect (e.g. Plasma) reads the new CSS variables
   useLayoutEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    window.localStorage.setItem('theme', theme);
   }, [theme]);
 
   const isDark = theme === 'dark';
-  const toggleTheme = () => setTheme((t) => (t === 'dark' ? 'light' : 'dark'));
+  const toggleTheme = () =>
+    setTheme((t) => {
+      const next = t === 'dark' ? 'light' : 'dark';
+      window.localStorage.setItem(THEME_STORAGE_KEY, next);
+      return next;
+    });
 
   return (
     <ThemeContext.Provider value={{ theme, isDark, toggleTheme }}>
