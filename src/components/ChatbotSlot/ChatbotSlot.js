@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import profile from '../../data/profile.json';
 import Icon from '../Icon/Icon';
 import { OPEN_CHAT_EVENT } from '../../lib/site';
+import renderRich from '../../lib/renderRich';
 import './ChatbotSlot.scss';
 
 // Cloudflare Worker endpoint (worker.js) — set in .env.production for builds,
@@ -104,7 +105,7 @@ export default function ChatbotSlot() {
             <div className="chatbot-panel-body" ref={scrollRef}>
               {messages.map((m, i) => (
                 <div key={i} className={`chatbot-message chatbot-message-${m.role}`}>
-                  {m.text}
+                  {m.role === 'assistant' ? renderRich(m.text) : m.text}
                 </div>
               ))}
               {isSending && <div className="chatbot-message chatbot-message-assistant">Thinking…</div>}
