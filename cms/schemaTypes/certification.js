@@ -10,6 +10,8 @@ export default {
     },
     { name: 'title', type: 'string' },
     { name: 'date', type: 'string' },
+    { name: 'expires', type: 'string' },
+    { name: 'skills', type: 'array', of: [{ type: 'string' }] },
     { name: 'issuer', type: 'string' },
     { name: 'url', type: 'url' },
     { name: 'order', type: 'number' },

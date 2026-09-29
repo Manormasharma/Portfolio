@@ -1,11 +1,36 @@
 [
   {
     "type": "certification",
+    "title": "AWS Certified AI Practitioner (AIF-C01)",
+    "date": "09/2026",
+    "issuer": "Amazon Web Services",
+    "url": "https://www.linkedin.com/in/manorma-sharma/details/certifications/",
+    "order": 1,
+    "expires": "09/2029",
+    "skills": [
+      "Amazon Bedrock",
+      "Amazon SageMaker",
+      "Generative AI",
+      "Foundation Models",
+      "Prompt Engineering",
+      "Responsible AI"
+    ]
+  },
+  {
+    "type": "certification",
+    "title": "Build Infrastructure with Terraform on Google Cloud",
+    "date": "09/2026",
+    "issuer": "Google Cloud Skill Badge",
+    "url": "https://www.credly.com/badges/10de07f0-63b2-407e-8a5c-eae05994080b",
+    "order": 2
+  },
+  {
+    "type": "certification",
     "title": "Microsoft Certified: Azure Fundamentals",
     "date": "07/2022",
     "issuer": "Microsoft",
     "url": "https://learn.microsoft.com/en-us/users/manormasharma/credentials/337dafcc365d1477",
-    "order": 1
+    "order": 3
   },
   {
     "type": "achievement",

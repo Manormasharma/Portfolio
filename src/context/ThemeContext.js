@@ -1,14 +1,11 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useContext, useLayoutEffect, useState } from 'react';
 
 const ThemeContext = createContext(null);
 
-// Light (teal accent) is this site's identity — confirmed over the dark
-// variants during design review. Dark stays available as an opt-in fallback
-// (dark-indigo, the most neutral of the tried variants) for visitors who
-// prefer it, via the toggle.
-const DEFAULT_THEME = 'light';
-const DARK_FALLBACK = 'dark-indigo';
-const VALID_THEME_IDS = ['light', DARK_FALLBACK];
+// Dark is the default identity; light is opt-in. public/index.html applies
+// the stored value before first paint so there's no flash on load.
+const DEFAULT_THEME = 'dark';
+const VALID_THEME_IDS = ['dark', 'light'];
 
 function getInitialTheme() {
   const stored = window.localStorage.getItem('theme');
@@ -18,13 +15,15 @@ function getInitialTheme() {
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(getInitialTheme);
 
-  useEffect(() => {
+  // layout effect so the attribute is in place before any child's passive
+  // effect (e.g. Plasma) reads the new CSS variables
+  useLayoutEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     window.localStorage.setItem('theme', theme);
   }, [theme]);
 
-  const isDark = theme !== 'light';
-  const toggleTheme = () => setTheme((t) => (t === 'light' ? DARK_FALLBACK : 'light'));
+  const isDark = theme === 'dark';
+  const toggleTheme = () => setTheme((t) => (t === 'dark' ? 'light' : 'dark'));
 
   return (
     <ThemeContext.Provider value={{ theme, isDark, toggleTheme }}>

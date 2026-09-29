@@ -1,37 +1,105 @@
 {
   "name": "Manorma Sharma",
-  "title": "Software Engineer (Full Stack — React.js / Node.js)",
-  "location": "Delhi 110041",
-  "phone": "+91 8512893890",
-  "tagline": "Full Stack Software Engineer",
-  "heroIntro": "5+ years building production-scale web applications across React.js, Node.js, and cloud technologies — from frontend architecture and performance optimization to secure Node.js/Express backends and REST APIs.",
-  "heroBioBullets": [
-    "Full stack engineer across React.js, Node.js, and cloud infrastructure",
-    "Track record of leading architecture redesigns and measurable performance gains",
-    "Experience mentoring engineers across fast-paced, cross-functional teams"
+  "title": "Full Stack Engineer (React.js / Node.js)",
+  "location": "Delhi, India",
+  "tagline": "Full Stack Engineer",
+  "rotatingRoles": [
+    "React.js & Next.js",
+    "Node.js & APIs",
+    "Design Systems",
+    "Cloud & DevOps",
+    "GenAI Workflows"
   ],
-  "aboutIntro": "Software Engineer with 5+ years building production-scale web applications across React.js, Node.js, and cloud technologies.",
+  "heroIntro": "Full Stack Engineer with 5+ years of experience shipping production web applications with React.js, Next.js, TypeScript and Node.js. Currently leading frontend architecture for a multi-role B2B platform at HUMBEE.",
+  "relocation": "Open to relocation — Europe | India (Bengaluru, Pune, Hyderabad)",
+  "availability": "Open to new opportunities",
+  "metrics": [
+    {
+      "value": 5,
+      "suffix": "+",
+      "label": "Years building production web apps",
+      "key": "yearsExperience"
+    },
+    {
+      "value": 30,
+      "suffix": "+",
+      "label": "Reusable components in the design system",
+      "key": "designSystemComponents"
+    },
+    {
+      "value": 30,
+      "prefix": "~",
+      "suffix": "%",
+      "label": "Faster page loads via performance work",
+      "key": "pageLoadReduction"
+    }
+  ],
   "bioParagraphs": [
-    "I work across the full stack — from component architecture, state management, and performance optimization (Core Web Vitals, code splitting, CDN delivery) to Node.js/Express backends, REST APIs, and secure authentication with JWT and RBAC.",
-    "I have a track record of leading architecture redesigns, delivering measurable performance gains, and mentoring engineers across fast-paced, cross-functional teams — with growing hands-on experience in AI/GenAI tooling (agentic workflows, RAG, local LLM inference)."
+    "I led the frontend architecture redesign of a multi-role B2B platform at HUMBEE — serving distributors, dealers, retailers and manufacturers from a single React.js codebase — built its 30+ component design system, and cut page-load time by ~30% through lazy loading, code splitting and CDN caching.",
+    "Across five teams I've owned the full delivery loop: translating business requirements into features, securing platforms with JWT and RBAC, managing CI/CD pipelines with DevOps, and raising quality through testing and code reviews.",
+    "I'm an AWS Certified AI Practitioner, covering generative AI on AWS with Amazon Bedrock and Amazon SageMaker. I have hands-on experience across AWS, Azure, Google Cloud and Terraform, and I build GenAI tooling with Google ADK, RAG and LLM APIs."
   ],
-  "summary": "Software Engineer with 5+ years building production-scale web applications across React.js, Node.js, and cloud technologies. Experienced across the full stack — from component architecture, state management, and performance optimization (Core Web Vitals, code splitting, CDN delivery) to Node.js/Express backends, REST APIs, and secure authentication with JWT and RBAC. Track record of leading architecture redesigns, delivering measurable performance gains, and mentoring engineers across fast-paced, cross-functional teams.",
+  "summary": "Full Stack Engineer with 5+ years of experience building production web applications with React.js, Next.js, TypeScript and Node.js. Led the redesign of a multi-role B2B platform, built a 30+ component design system and cut page-load time by ~30%. AWS Certified AI Practitioner (Amazon Bedrock, Amazon SageMaker) with hands-on experience in cloud (AWS, Azure, Google Cloud, Terraform) and GenAI (Google ADK, RAG, LLM APIs). Open to relocation across Europe and to Bengaluru, Pune or Hyderabad.",
+  "pillars": [
+    {
+      "title": "Frontend Architecture",
+      "desc": "Scalable React.js / Next.js architecture, shared codebases for multiple user roles, and state management with Redux Toolkit."
+    },
+    {
+      "title": "Design Systems",
+      "desc": "Reusable, standardized component libraries that improve consistency, maintainability and development velocity."
+    },
+    {
+      "title": "Full Stack & Security",
+      "desc": "Node.js / Express REST APIs and microservices, secured with JWT authentication and role-based access control."
+    },
+    {
+      "title": "Performance & Quality",
+      "desc": "Core Web Vitals, lazy loading, code splitting, CDN caching, WCAG accessibility, SEO and Jest-based testing."
+    },
+    {
+      "title": "Cloud & DevOps",
+      "desc": "AWS CloudFront & S3, Azure, Google Cloud, Docker, Terraform and CI/CD pipelines with GitHub Actions."
+    },
+    {
+      "title": "GenAI Engineering",
+      "desc": "Agentic AI with Google ADK, RAG, MCP and LLM APIs (OpenAI, Gemini, Claude), generative AI on AWS with Amazon Bedrock and SageMaker, plus local inference with Ollama."
+    }
+  ],
   "coreSkills": [
-    "Frontend Architecture",
-    "Cross-Functional Communication",
+    "Full Stack Development",
+    "Frontend & Backend Architecture",
+    "Design Systems & Reusable Components",
     "Requirement Analysis",
-    "Agile/Scrum Delivery",
+    "Cross-Functional Communication",
     "CI/CD Automation & IaC (Terraform)",
-    "Technical Mentorship & Code Reviews",
     "Cloud Infrastructure & Scalable Deployment",
-    "Analytical & Critical Thinking"
+    "Performance Optimization",
+    "Testing & Code Quality",
+    "Technical Mentorship & Code Reviews",
+    "Agile/Scrum Delivery"
   ],
-  "languages": ["Hindi", "English"],
+  "languages": [
+    "Hindi",
+    "English"
+  ],
   "yearsExperience": "5+",
   "contactEmail": "mannuu0501@gmail.com",
   "socialLinks": [
-    { "platform": "github", "url": "https://github.com/Manormasharma" },
-    { "platform": "linkedin", "url": "https://www.linkedin.com/in/manorma-sharma/" },
-    { "platform": "email", "url": "mailto:mannuu0501@gmail.com?subject=Mail from Manorma Portfolio" }
+    {
+      "platform": "github",
+      "label": "github.com/Manormasharma",
+      "url": "https://github.com/Manormasharma"
+    },
+    {
+      "platform": "linkedin",
+      "label": "linkedin.com/in/manorma-sharma",
+      "url": "https://www.linkedin.com/in/manorma-sharma/"
+    },
+    {
+      "platform": "email",
+      "label": "mannuu0501@gmail.com",
+      "url": "mailto:mannuu0501@gmail.com?subject=Mail from Manorma Portfolio"
+    }
   ]
 }

@@ -10,6 +10,7 @@ export default {
     { name: 'projectImage', type: 'image' },
     { name: 'url', type: 'url' },
     { name: 'techlist', type: 'array', of: [{ type: 'string' }] },
+    { name: 'category', type: 'string', description: 'Used by the Work section filter chips' },
     { name: 'order', type: 'number' },
   ],
 };

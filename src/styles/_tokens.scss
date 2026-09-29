@@ -1,62 +1,93 @@
-// Light (teal accent) is this site's default identity. Dark stays available
-// as an opt-in via the ThemeToggle for visitors who prefer it.
+// Dark is the default identity (set pre-paint in public/index.html);
+// light is available via the ThemeToggle / command palette.
 :root {
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
   --radius-pill: 999px;
 
-  --font-display: 'Sora', sans-serif;
-  --font-body: 'Inter', sans-serif;
-  --font-mono: 'JetBrains Mono', 'DM Mono', monospace;
+  --font-display: 'Inter Tight', 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
-  --color-bg:         #ffffff;
-  --color-bg-translucent: rgba(255, 255, 255, 0.85);
-  --color-surface:    #f4f6fb;
-  --color-surface-2:  #e9edf6;
-  --color-text:       #0a192f;
-  --color-heading:    #010409;
-  --color-text-muted: #4b5673;
-  --color-border:     rgba(10, 25, 47, 0.1);
-
-  --color-accent:     #0d9488;
-  --color-accent-soft: rgba(13, 148, 136, 0.1);
-  --color-accent-2:   #0d9488;
-  --color-accent-2-soft: rgba(13, 148, 136, 0.1);
-
-  --color-white:      #ffffff;
-  --color-black:      #0a192f;
-
-  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
-  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.1);
-  --shadow-lg: 0 20px 48px rgba(15, 23, 42, 0.16);
-
-  // deprecated aliases kept during migration so any un-audited scss still resolves
-  --color-dark-blue:  var(--color-accent);
-  --color-pink:       var(--color-accent-2);
+  --container: 1180px;
+  --header-h: 72px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
-// Opt-in dark mode — enterprise navy/charcoal with a vibrant blue primary
-// accent and a warm amber secondary accent (reference: xicom.biz).
-[data-theme="dark-indigo"] {
-  --color-bg:         #0d1526;
-  --color-bg-translucent: rgba(13, 21, 38, 0.85);
-  --color-surface:    #131f36;
-  --color-surface-2:  #1a2942;
-  --color-text:       #e7ecf5;
-  --color-heading:    #ffffff;
-  --color-text-muted: #93a1b8;
-  --color-border:     rgba(231, 236, 245, 0.1);
+:root,
+[data-theme="dark"] {
+  --color-bg:              #07090e;
+  --color-bg-translucent:  rgba(7, 9, 14, 0.72);
+  --color-surface:         #0e131c;
+  --color-surface-2:       #141a25;
+  --color-surface-hover:   #18202d;
+  --color-text:            #e6e9ef;
+  --color-heading:         #ffffff;
+  --color-text-muted:      #97a1b1;
+  --color-text-subtle:     #626c7c;
+  --color-border:          rgba(255, 255, 255, 0.07);
+  --color-border-strong:   rgba(255, 255, 255, 0.14);
 
-  --color-accent:     #2f7dfa;
-  --color-accent-soft: rgba(47, 125, 250, 0.14);
-  --color-accent-2:   #f5943a;
-  --color-accent-2-soft: rgba(245, 148, 58, 0.14);
+  --color-accent:          #7aa2ff;
+  --color-accent-soft:     rgba(122, 162, 255, 0.12);
+  --color-accent-2:        #5eead4;
+  --color-accent-2-soft:   rgba(94, 234, 212, 0.12);
+  --color-success:         #4ade80;
+  --gradient-accent:       linear-gradient(120deg, #9bb8ff 0%, #5b8def 100%);
+  --glow:                  rgba(122, 162, 255, 0.16);
+  --grid-line:             rgba(255, 255, 255, 0.035);
 
-  --color-white:      #0d1526;
-  --color-black:      #070c17;
+  // text/icon colour that sits on top of the accent gradient
+  --color-white:           #07090e;
+  --color-black:           #030406;
 
-  --shadow-sm: 0 10px 30px -15px rgba(0, 0, 0, 0.6);
-  --shadow-md: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
-  --shadow-lg: 0 30px 60px -20px rgba(0, 0, 0, 0.8);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 12px 32px -12px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 30px 60px -20px rgba(0, 0, 0, 0.75);
+  --plasma-1:              #3b5bff;
+  --plasma-2:              #6366f1;
+  --plasma-3:              #22d3ee;
+  --plasma-intensity:      0.6;
+  --glass:                 rgba(14, 19, 28, 0.55);
+  --glass-strong:          rgba(14, 19, 28, 0.78);
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --color-bg:              #f7f8fb;
+  --color-bg-translucent:  rgba(247, 248, 251, 0.78);
+  --color-surface:         #ffffff;
+  --color-surface-2:       #f0f2f7;
+  --color-surface-hover:   #f4f6fb;
+  --color-text:            #0f172a;
+  --color-heading:         #020617;
+  --color-text-muted:      #4a5568;
+  --color-text-subtle:     #8a94a6;
+  --color-border:          rgba(15, 23, 42, 0.08);
+  --color-border-strong:   rgba(15, 23, 42, 0.16);
+
+  --color-accent:          #2f5bea;
+  --color-accent-soft:     rgba(47, 91, 234, 0.09);
+  --color-accent-2:        #0f9d8a;
+  --color-accent-2-soft:   rgba(15, 157, 138, 0.1);
+  --color-success:         #16a34a;
+  --gradient-accent:       linear-gradient(120deg, #1e40af 0%, #2f6bea 100%);
+  --glow:                  rgba(47, 91, 234, 0.1);
+  --grid-line:             rgba(15, 23, 42, 0.045);
+
+  --color-white:           #ffffff;
+  --color-black:           #0f172a;
+
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 12px 32px -12px rgba(15, 23, 42, 0.16);
+  --shadow-lg: 0 30px 60px -24px rgba(15, 23, 42, 0.24);
+  --plasma-1:              #7c9bff;
+  --plasma-2:              #a5b4fc;
+  --plasma-3:              #6ee7d7;
+  --plasma-intensity:      0.85;
+  --glass:                 rgba(255, 255, 255, 0.6);
+  --glass-strong:          rgba(255, 255, 255, 0.82);
+  color-scheme: light;
 }

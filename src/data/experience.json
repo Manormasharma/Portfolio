@@ -1,18 +1,38 @@
 [
   {
-    "company": "Humbee",
+    "company": "HUMBEE",
     "role": "Software Development Engineer",
     "startDate": "Aug 2024",
-    "endDate": "Current",
+    "endDate": "Present",
     "location": "Noida, India",
+    "summary": "Leading frontend architecture for a multi-role B2B commerce platform connecting manufacturers, distributors, dealers and retailers.",
     "bullets": [
-      "Led frontend architecture redesign of a multi-role B2B platform serving distributors, dealers, retailers, and manufacturers, supporting 4 distinct user roles across a single React.js codebase.",
-      "Built and standardized **30+ reusable React.js components**, improving development velocity and cutting new-feature build time.",
-      "Improved Web Core Vitals and **reduced page load time by ~30%** through lazy loading, code splitting, and CDN caching.",
-      "Implemented secure **JWT authentication and Role-Based Access Control (RBAC)** across all platform user types.",
-      "Integrated **Adobe Marketo** for automated lead capture, reducing manual marketing handoffs and improving lead-to-workflow turnaround.",
-      "Configured **AWS CloudFront CDN** for optimized global content delivery, reducing asset latency for end users.",
-      "Collaborated cross-functionally with backend and DevOps teams to streamline deployment pipelines and improve release scalability."
+      "Led the **frontend architecture redesign** of a multi-role B2B platform serving distributors, dealers, retailers and manufacturers, supporting **4 distinct user roles** across a shared React.js codebase.",
+      "Led the design and development of a reusable **design system** and component architecture; built and standardized **30+ React.js components** to improve consistency, maintainability and development velocity.",
+      "Drove performance optimization and **reduced page-load time by ~30%** through lazy loading, code splitting and CDN caching, improving Core Web Vitals.",
+      "Integrated **AWS CloudFront** for optimized global content delivery and reduced asset latency for end users.",
+      "Managed **CI/CD pipelines** and deployment workflows with backend and DevOps teams, supporting reliable and scalable releases.",
+      "Implemented secure **JWT authentication and RBAC** across platform user types and workflows.",
+      "Strengthened frontend quality through **Jest-based testing**, unit testing, debugging and code-review practices.",
+      "Translated business requirements into production features while collaborating with product, backend and DevOps teams.",
+      "Used AI/GenAI tools and workflows to improve engineering productivity and accelerate development tasks."
+    ],
+    "tech": [
+      "Architecture Design & Development",
+      "Performance Optimization",
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Redux Toolkit",
+      "MUI",
+      "AWS CodePipeline",
+      "CI/CD",
+      "Workflow YAML Management",
+      "AWS CloudFront & S3",
+      "Deployment",
+      "JWT / RBAC",
+      "Jest"
     ],
     "visible": true,
     "order": 1
@@ -23,25 +43,42 @@
     "startDate": "Jan 2024",
     "endDate": "Jul 2024",
     "location": "Bengaluru, India",
+    "summary": "Delivered enterprise CMS solutions for US-based clients across multiple accounts.",
     "bullets": [
-      "Gathered and translated requirements from US-based enterprise clients into scalable CMS solutions on tight delivery timelines.",
+      "Gathered and translated requirements from **US-based enterprise clients** into scalable CMS solutions on tight delivery timelines.",
       "Developed and customized enterprise web applications using **Crownpeak CMS** for multiple client accounts.",
-      "Improved application performance and stability through structured refactoring, debugging, and code review.",
-      "Delivered features within Agile sprints, coordinating with cross-functional and distributed teams."
+      "Improved application performance and stability through structured refactoring, debugging and code review.",
+      "Delivered features within **Agile sprints** while coordinating with cross-functional and distributed teams."
+    ],
+    "tech": [
+      "Crownpeak CMS",
+      "JavaScript",
+      "HTML5",
+      "SCSS",
+      "Agile/Scrum"
     ],
     "visible": true,
     "order": 2
   },
   {
     "company": "US-Based Event Technology Platform",
+    "shortName": "Event Tech (Freelance)",
     "role": "Freelance Web Developer",
     "startDate": "May 2023",
     "endDate": "Mar 2024",
     "location": "Remote",
+    "summary": "Built event websites and attendee management systems for enterprise clients.",
     "bullets": [
-      "Developed responsive event websites and attendee management systems for enterprise clients.",
+      "Developed responsive event websites and **attendee management systems** for enterprise clients.",
       "Built dynamic registration workflows and **role-based access control** systems for high-traffic events.",
-      "Delivered and optimized high-traffic event platforms, ensuring stable performance during peak registration windows."
+      "Delivered and optimized **high-traffic event platforms**, ensuring stable performance during peak registration windows."
+    ],
+    "tech": [
+      "React.js",
+      "JavaScript",
+      "RBAC",
+      "REST APIs",
+      "Responsive Design"
     ],
     "visible": true,
     "order": 3
@@ -52,11 +89,20 @@
     "startDate": "May 2022",
     "endDate": "Jun 2023",
     "location": "Bengaluru, India",
+    "summary": "Modernized marketing and product surfaces for a global developer-hiring platform.",
     "bullets": [
       "Migrated legacy WordPress applications to **React.js** using REST APIs, improving maintainability and load performance.",
       "Integrated **HubSpot** for marketing automation and analytics, improving campaign tracking accuracy.",
-      "Improved SEO, accessibility (WCAG), and Web Core Vitals scores across key product pages.",
+      "Improved **SEO, accessibility (WCAG) and Core Web Vitals** across key product pages.",
       "Built reusable UI components aligned with the product roadmap, supporting faster feature delivery."
+    ],
+    "tech": [
+      "React.js",
+      "REST APIs",
+      "WordPress",
+      "HubSpot",
+      "SEO",
+      "WCAG"
     ],
     "visible": true,
     "order": 4
@@ -67,10 +113,18 @@
     "startDate": "Nov 2020",
     "endDate": "Apr 2022",
     "location": "Delhi, India",
+    "summary": "Built responsive client-facing web products and custom WordPress solutions.",
     "bullets": [
-      "Developed responsive, cross-browser UI using HTML, CSS, and JavaScript for client-facing web products.",
-      "Customized WordPress themes and integrated backend APIs to extend site functionality.",
+      "Developed responsive, **cross-browser UI** using HTML, CSS and JavaScript for client-facing web products.",
+      "Customized **WordPress themes** and integrated backend APIs to extend site functionality.",
       "Improved performance and maintainability through modular, component-based coding practices."
+    ],
+    "tech": [
+      "HTML5",
+      "CSS3 / SCSS",
+      "JavaScript",
+      "WordPress",
+      "PHP"
     ],
     "visible": true,
     "order": 5

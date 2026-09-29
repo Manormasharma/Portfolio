@@ -1,21 +1,30 @@
 import React from 'react';
-import "./resume.scss"
-import profile from "../../data/profile.json";
-import experienceData from "../../data/experience.json";
-import educationData from "../../data/education.json";
-import certificationsData from "../../data/certifications.json";
-import Timeline from "../../components/Timeline/Timeline";
-import SectionHeading from "../../components/SectionHeading/SectionHeading";
+import { motion } from 'framer-motion';
+import Icon from '../../components/Icon/Icon';
+import profile from '../../data/profile.json';
+import experienceData from '../../data/experience.json';
+import educationData from '../../data/education.json';
+import certificationsData from '../../data/certifications.json';
+import skillsData from '../../data/skills.json';
+import technicalProjectsData from '../../data/technicalProjects.json';
+import renderRich from '../../lib/renderRich';
+import { formatDuration } from '../../lib/dates';
+import './resume.scss';
 
 const byOrder = (a, b) => a.order - b.order;
 
-function renderBullet(bullet, index) {
-  // supports **bold** markers from the data files without pulling in a markdown parser
-  const parts = bullet.split(/\*\*(.*?)\*\*/g);
+function Block({ title, children }) {
   return (
-    <li key={index}>
-      {parts.map((part, i) => (i % 2 === 1 ? <strong key={i}>{part}</strong> : part))}
-    </li>
+    <motion.section
+      className="cv-block"
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <h2 className="cv-block-title">{title}</h2>
+      {children}
+    </motion.section>
   );
 }
 
@@ -23,92 +32,140 @@ function Resume() {
   const certifications = certificationsData.filter((c) => c.type === 'certification').sort(byOrder);
   const awards = certificationsData.filter((c) => c.type === 'achievement').sort(byOrder);
   const education = educationData.slice().sort(byOrder);
-  const experience = experienceData.filter((e) => e.visible).slice().sort(byOrder);
+  const experience = experienceData.filter((e) => e.visible).sort(byOrder);
+  const projects = technicalProjectsData.slice().sort(byOrder);
+  const skillGroups = [...new Set(skillsData.map((s) => s.category))].map((category) => ({
+    category,
+    skills: skillsData.filter((s) => s.category === category).sort(byOrder).map((s) => s.name),
+  }));
 
   return (
-    <>
-    <section id="resume" className="resume py-5">
+    <div className="cv-page">
       <div className="container">
-        <SectionHeading number="04" title="Resume" />
-        <div className="row pb-5">
-          <div className="col-lg-6">
-            <h3 className="resume-title">Summary</h3>
-            <div className="resume-item">
-              <h4>{profile.name}</h4>
-              {profile.title && <h5>{profile.title}</h5>}
-              <p><em>{profile.summary}</em></p>
-              <ul>
-                <li><a href={`mailto:${profile.contactEmail}`}>{profile.contactEmail}</a></li>
-                {profile.phone && <li>{profile.phone}</li>}
-                {profile.location && <li>{profile.location}</li>}
-              </ul>
-              {profile.coreSkills && (
-                <div className="core-skills-tags">
-                  {profile.coreSkills.map((skill) => (
-                    <span className="badge bg-pink me-2 mb-2" key={skill}>{skill}</span>
+        <div className="cv-toolbar">
+          <p className="mono">résumé / {profile.name.toLowerCase().replace(' ', '-')}</p>
+        </div>
+
+        <motion.article
+          className="cv card"
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <header className="cv-header">
+            <div>
+              <h1>{profile.name}</h1>
+              <p className="cv-title">{profile.title}</p>
+            </div>
+            <ul className="cv-contact">
+              <li><Icon name="email" size={14} /><a href={`mailto:${profile.contactEmail}`}>{profile.contactEmail}</a></li>
+              <li><Icon name="mapPin" size={14} />{profile.location}</li>
+              {profile.socialLinks.filter((l) => l.platform !== 'email').map((l) => (
+                <li key={l.platform}>
+                  <Icon name={l.platform} size={14} />
+                  <a href={l.url} target="_blank" rel="noreferrer">{l.label}</a>
+                </li>
+              ))}
+            </ul>
+          </header>
+          <p className="cv-relocation"><Icon name="globe" size={14} /> {profile.relocation}</p>
+
+          <div className="cv-grid">
+            <div className="cv-main">
+              <Block title="Professional Summary">
+                <p className="cv-summary">{profile.summary}</p>
+              </Block>
+
+              <Block title="Work History">
+                <ol className="cv-timeline">
+                  {experience.map((job) => (
+                    <li key={job.company}>
+                      <div className="cv-job-head">
+                        <h3>{job.role}</h3>
+                        <span className="mono">{job.startDate} – {job.endDate}</span>
+                      </div>
+                      <p className="cv-job-meta">
+                        {job.company} · {job.location} · <span>{formatDuration(job.startDate, job.endDate)}</span>
+                      </p>
+                      <ul className="cv-bullets rich">
+                        {job.bullets.map((b, i) => <li key={i}>{renderRich(b)}</li>)}
+                      </ul>
+                    </li>
                   ))}
-                </div>
-              )}
+                </ol>
+              </Block>
+
+              <Block title="Projects & Technical Exploration">
+                {projects.map((p) => (
+                  <div className="cv-project" key={p.name}>
+                    <h3>
+                      {p.url ? <a href={p.url} target="_blank" rel="noreferrer">{p.name}</a> : p.name}
+                      {p.subtitle && <span> — {p.subtitle}</span>}
+                    </h3>
+                    <ul className="cv-bullets">
+                      {p.bullets.map((b, i) => <li key={i}>{b}</li>)}
+                    </ul>
+                    <p className="cv-tech mono">{p.tech.join(' · ')}</p>
+                  </div>
+                ))}
+              </Block>
             </div>
 
-            <h3 className="resume-title">Certifications</h3>
-            {certifications.map((cert) => (
-              <div className="resume-item" key={cert.title}>
-                <h4><a href={cert.url} target='_blank' rel="noreferrer">{cert.title}</a></h4>
-                <h5>{cert.date}</h5>
-                <p>{cert.issuer}</p>
-              </div>
-            ))}
-
-            <h3 className="resume-title">Education</h3>
-            {education.map((edu) => (
-              <div className="resume-item" key={edu.degree}>
-                <h4>{edu.degree}</h4>
-                <h5>{edu.dateRange}</h5>
-                <p><em>{edu.institution}</em></p>
-              </div>
-            ))}
-
-            <h3 className="resume-title">Awards</h3>
-            {awards.map((item) => (
-              <div className="resume-item" key={item.title}>
-                <h4><a href={item.url} target='_blank' rel="noreferrer"> {item.title}</a></h4>
-                {item.date && <h5>{item.date}</h5>}
-                <p><em>{item.issuer}</em></p>
-              </div>
-            ))}
-
-            {profile.languages && (
-              <>
-                <h3 className="resume-title">Languages</h3>
-                <div className="resume-item">
-                  <p className="mb-0">{profile.languages.join(' • ')}</p>
+            <aside className="cv-side">
+              <Block title="Core Skills">
+                <div className="tag-list">
+                  {profile.coreSkills.map((s) => <span className="tag" key={s}>{s}</span>)}
                 </div>
-              </>
-            )}
+              </Block>
+
+              <Block title="Technical Skills">
+                <dl className="cv-skills">
+                  {skillGroups.map((g) => (
+                    <div key={g.category}>
+                      <dt>{g.category}</dt>
+                      <dd>{g.skills.join(', ')}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </Block>
+
+              <Block title="Certifications">
+                {certifications.map((c) => (
+                  <div className="cv-item" key={c.title}>
+                    <h4>{c.url ? <a href={c.url} target="_blank" rel="noreferrer">{c.title}</a> : c.title}</h4>
+                    <p>{c.issuer} · <span className="mono">{c.date}{c.expires && ` (valid until ${c.expires})`}</span></p>
+                    {c.skills && <p className="cv-cert-skills">{c.skills.join(' · ')}</p>}
+                  </div>
+                ))}
+              </Block>
+
+              <Block title="Education">
+                {education.map((e) => (
+                  <div className="cv-item" key={e.degree}>
+                    <h4>{e.degree}</h4>
+                    <p>{e.institution} · <span className="mono">{e.dateRange}</span></p>
+                  </div>
+                ))}
+              </Block>
+
+              <Block title="Awards">
+                {awards.map((a) => (
+                  <div className="cv-item" key={a.title}>
+                    <h4>{a.url ? <a href={a.url} target="_blank" rel="noreferrer">{a.title}</a> : a.title}</h4>
+                    <p>{a.issuer}</p>
+                  </div>
+                ))}
+              </Block>
+
+              <Block title="Languages">
+                <p className="cv-langs">{profile.languages.join(' · ')}</p>
+              </Block>
+            </aside>
           </div>
-          <div className="col-lg-6">
-            <h3 className="resume-title">Experience</h3>
-            <Timeline
-              items={experience}
-              renderItem={(job) => (
-                <div className="timeline-content">
-                  <h4>{job.company}{job.role ? ` - ${job.role}` : ''}</h4>
-                  <h5>{job.startDate} - {job.endDate}</h5>
-                  <p><em>{job.location}</em></p>
-                  <p className='responsibilty'><strong>Responsibilities</strong></p>
-                  <ul>
-                    {job.bullets.map(renderBullet)}
-                  </ul>
-                </div>
-              )}
-            />
-          </div>
-        </div>
+        </motion.article>
       </div>
-    </section>
-    </>
-  )
+    </div>
+  );
 }
 
-export default Resume
+export default Resume;

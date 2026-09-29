@@ -46,4 +46,7 @@ const skillIcons = {
   claude,
 };
 
+// single-colour (black) logos that need inverting on dark backgrounds
+export const monoIcons = new Set(['aws', 'azure', 'express', 'nextjs', 'ollama', 'openai', 'github']);
+
 export default skillIcons;

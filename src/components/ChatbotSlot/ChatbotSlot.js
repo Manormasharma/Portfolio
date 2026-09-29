@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import profile from '../../data/profile.json';
+import Icon from '../Icon/Icon';
+import { OPEN_CHAT_EVENT } from '../../lib/site';
 import './ChatbotSlot.scss';
 
 const API_URL = process.env.REACT_APP_CHATBOT_API_URL;
@@ -16,6 +18,12 @@ export default function ChatbotSlot() {
   const [input, setInput] = useState('');
   const [isSending, setIsSending] = useState(false);
   const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const onOpen = () => setIsOpen(true);
+    window.addEventListener(OPEN_CHAT_EVENT, onOpen);
+    return () => window.removeEventListener(OPEN_CHAT_EVENT, onOpen);
+  }, []);
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -74,8 +82,12 @@ export default function ChatbotSlot() {
             transition={{ duration: 0.2 }}
           >
             <div className="chatbot-panel-header">
-              <span>Ask about {profile.name}</span>
-              <button type="button" aria-label="Close chat" onClick={() => setIsOpen(false)}>&times;</button>
+              <span className="chatbot-title">
+                <Icon name="sparkles" size={16} /> Ask about {profile.name.split(' ')[0]}
+              </span>
+              <button type="button" aria-label="Close chat" onClick={() => setIsOpen(false)}>
+                <Icon name="close" size={16} />
+              </button>
             </div>
             <div className="chatbot-panel-body" ref={scrollRef}>
               {messages.map((m, i) => (
@@ -106,7 +118,7 @@ export default function ChatbotSlot() {
         whileHover={{ scale: 1.06 }}
         whileTap={{ scale: 0.95 }}
       >
-        {isOpen ? '×' : '💬'}
+        <Icon name={isOpen ? 'close' : 'sparkles'} size={22} />
       </motion.button>
     </div>
   );
