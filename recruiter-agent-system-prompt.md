@@ -10,7 +10,7 @@ Software Engineer with 5.2 years of experience building production applications 
 
 - **Status:** Open to opportunities across India & Europe
 - **Relocation:** Open to relocation + employer-sponsored work authorization (Europe) | India (Bengaluru, Pune, Hyderabad)
-- **Open to roles:** Software Engineer; Frontend Engineer (React / Next.js); Full Stack Engineer (React + Node.js); AI / GenAI Application Engineer; Agentic AI Engineer; Frontend Architect / Design Systems Engineer
+- **Open to roles:** Software Engineer; Senior Frontend Engineer (React / Next.js); Full Stack Engineer; AI / GenAI Application Engineer; Agentic AI Engineer
 - **Email:** manorma.sharrma@gmail.com
 - **Portfolio:** manormasharma.github.io/Portfolio
 - **LinkedIn:** linkedin.com/in/manorma-sharma
@@ -79,15 +79,14 @@ Software Engineering (Frontend, Backend & APIs) • Frontend & Backend Architect
 
 ## Selected Work
 
-- **HUMBEE Channel** (https://channel.humbee.in/login) — Dedicated login portal giving distributors, dealers, and retailers secure access to their side of the HUMBEE value chain, backed by JWT authentication and role-based access control. Tech: React.js, JWT Auth, RBAC, Performance Optimization, AWS CodePipeline, Workflow YAML
+- **HUMBEE Channel** (https://channel.humbee.in/login) — Dedicated login portal giving distributors, dealers, and retailers secure access to their side of the HUMBEE value chain, with a glassmorphism UI, JWT authentication and role-based access control. Tech: React.js, Glassmorphism UI, JWT Auth, RBAC, Performance Optimization, AWS CodePipeline, Workflow YAML
 - **HUMBEE Support Portal** (https://support-dev.humbee.in/login) — Support and account-access portal for the HUMBEE platform, built with Next.js and secured with JWT authentication and role-based access control, backed by CloudFront-delivered assets. Tech: Next.js, JWT Auth, RBAC, AWS CloudFront, Performance Optimization, AWS CodePipeline, Workflow YAML
 - **HUMBEE** (https://humbee.in/) — Marketing site for HUMBEE, a multi-role B2B platform connecting manufacturers, distributors, dealers, and retailers. Built on WordPress with a custom theme and custom plugins to communicate the platform's story and drive lead capture. Tech: WordPress, Custom Theme, Custom Plugins
 - **Hire 1o1** (https://hire101.hackerearth.com/) — Landing site for HackerEarth's Hire 1o1 international recruiter roadshow. Built responsive, interactive layouts with HTML, SCSS, and JavaScript on top of Bootstrap to keep the recruiting-leader audience engaged. Tech: HTML5, Bootstrap 4, JavaScript, SCSS
 - **Jassi Bindra** (http://www.jassibindradesigns.com/) — Portfolio site for an interior design and renovation studio. Delivered a full-bleed, image-driven layout with HTML, CSS, and JavaScript that puts the client's project photography front and center. Tech: HTML5, CSS3, PHP, JavaScript
 - **Black Friday** (https://www.hackerearth.com/recruit/black-friday-deal/) — Seasonal promotional campaign page for HackerEarth's recruiter products. Built a fast, conversion-focused interface with HTML, SCSS, and JavaScript to drive sign-ups during the Black Friday sale window. Tech: HTML5, SCSS, WordPress, JavaScript
 - **Spherecom** (https://spherecom.in/) — Corporate site for Sphere Com Services, a manufacturer of THINUX VHF/UHF RF transceivers. Built on WordPress with a custom theme to clearly communicate the company's products and brand story. Tech: WordPress CMS
-- **Deskify** (https://deskify.online/) — E-commerce storefront for Deskify Crafts, selling ergonomic office chairs and furniture. Built a WordPress/PHP theme with SCSS and JavaScript covering product catalog browsing, categories, and cart functionality. Tech: WordPress, SCSS, PHP, JavaScript
-- **Personal Portfolio** (https://manormasharma.github.io/Portfolio/) — This site — a data-driven React portfolio with a custom WebGL plasma background, glassmorphism UI, a ⌘K command menu, dark/light theming and an AI assistant backed by a Cloudflare Worker with multiple LLM providers. Deployed to GitHub Pages via GitHub Actions. Tech: React.js, WebGL, Framer Motion, SCSS, Cloudflare Workers, GitHub Actions, Performance Optimization, Workflow YAML
+- **Personal Portfolio** (https://manormasharma.github.io/Portfolio/) — This site: a data-driven React portfolio with an AI recruiter assistant (Cloudflare Worker, multiple LLM providers), deployed via GitHub Actions. Tech: React.js, Cloudflare Workers, LLM integration, GitHub Actions
 
 ## Personal & AI Projects
 

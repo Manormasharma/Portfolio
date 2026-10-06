@@ -17,11 +17,10 @@
   "workAuthNote": "Europe: open to relocation + employer-sponsored work authorization",
   "targetRoles": [
     "Software Engineer",
-    "Frontend Engineer (React / Next.js)",
-    "Full Stack Engineer (React + Node.js)",
+    "Senior Frontend Engineer (React / Next.js)",
+    "Full Stack Engineer",
     "AI / GenAI Application Engineer",
-    "Agentic AI Engineer",
-    "Frontend Architect / Design Systems Engineer"
+    "Agentic AI Engineer"
   ],
   "aiHighlights": [
     "AWS Certified AI Practitioner",

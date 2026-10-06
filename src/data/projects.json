@@ -19,6 +19,7 @@
     "image": "humbeeChannel",
     "techlist": [
       "React.js",
+      "Glassmorphism UI",
       "JWT Auth",
       "RBAC",
       "Performance Optimization",
@@ -26,7 +27,7 @@
       "Workflow YAML"
     ],
     "url": "https://channel.humbee.in/login",
-    "desc": "Dedicated login portal giving distributors, dealers, and retailers secure access to their side of the HUMBEE value chain, backed by JWT authentication and role-based access control.",
+    "desc": "Dedicated login portal giving distributors, dealers, and retailers secure access to their side of the HUMBEE value chain, with a glassmorphism UI, JWT authentication and role-based access control.",
     "order": 0.1,
     "category": "HUMBEE"
   },
@@ -106,36 +107,17 @@
     "category": "Oceanic Studio"
   },
   {
-    "projectName": "Deskify",
-    "slug": "ryaanace",
-    "image": "deskify",
-    "techlist": [
-      "WordPress",
-      "SCSS",
-      "PHP",
-      "JavaScript"
-    ],
-    "url": "https://deskify.online/",
-    "desc": "E-commerce storefront for Deskify Crafts, selling ergonomic office chairs and furniture. Built a WordPress/PHP theme with SCSS and JavaScript covering product catalog browsing, categories, and cart functionality.",
-    "order": 5,
-    "category": "Client"
-  },
-  {
     "projectName": "Personal Portfolio",
     "slug": "portfolio",
     "image": "portfolio",
     "techlist": [
       "React.js",
-      "WebGL",
-      "Framer Motion",
-      "SCSS",
       "Cloudflare Workers",
-      "GitHub Actions",
-      "Performance Optimization",
-      "Workflow YAML"
+      "LLM integration",
+      "GitHub Actions"
     ],
     "url": "https://manormasharma.github.io/Portfolio/",
-    "desc": "This site — a data-driven React portfolio with a custom WebGL plasma background, glassmorphism UI, a ⌘K command menu, dark/light theming and an AI assistant backed by a Cloudflare Worker with multiple LLM providers. Deployed to GitHub Pages via GitHub Actions.",
+    "desc": "This site: a data-driven React portfolio with an AI recruiter assistant (Cloudflare Worker, multiple LLM providers), deployed via GitHub Actions.",
     "category": "Personal",
     "order": 6
   }
