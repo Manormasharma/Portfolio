@@ -45,6 +45,13 @@ function Resume() {
       <div className="container">
         <div className="cv-toolbar">
           <p className="mono">résumé / {profile.name.toLowerCase().replace(' ', '-')}</p>
+          <a
+            className="btn btn-primary"
+            href={`${process.env.PUBLIC_URL}/Manorma_Sharma_Resume.pdf`}
+            download="Manorma_Sharma_Resume.pdf"
+          >
+            <Icon name="file" /> Download PDF
+          </a>
         </div>
 
         <motion.article
