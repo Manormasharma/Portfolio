@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.b6d9e8cc.css",
-    "main.js": "/Portfolio/static/js/main.98cd5c3f.js",
+    "main.js": "/Portfolio/static/js/main.4698009e.js",
     "static/media/jassibindra.png": "/Portfolio/static/media/jassibindra.153158d8012c58b503cf.png",
     "static/media/spherecom.png": "/Portfolio/static/media/spherecom.2f332b71597451706bac.png",
     "static/media/black-friday-deal.png": "/Portfolio/static/media/black-friday-deal.5f15ed976bb64055bbd2.png",
@@ -43,10 +43,10 @@
     "static/media/nextjs.svg": "/Portfolio/static/media/nextjs.10d70a5cf0d559c0eb4207542afb9f72.svg",
     "static/media/terraform.svg": "/Portfolio/static/media/terraform.8f3595d096cfd092643556e1a1245ac9.svg",
     "main.b6d9e8cc.css.map": "/Portfolio/static/css/main.b6d9e8cc.css.map",
-    "main.98cd5c3f.js.map": "/Portfolio/static/js/main.98cd5c3f.js.map"
+    "main.4698009e.js.map": "/Portfolio/static/js/main.4698009e.js.map"
   },
   "entrypoints": [
     "static/css/main.b6d9e8cc.css",
-    "static/js/main.98cd5c3f.js"
+    "static/js/main.4698009e.js"
   ]
 }
