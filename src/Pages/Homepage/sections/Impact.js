@@ -8,7 +8,7 @@ import skillIcons, { monoIcons } from '../../../lib/skillIcons';
 import useSpotlight from '../../../lib/useSpotlight';
 import './Impact.scss';
 
-function CountUp({ value, prefix = '', suffix = '' }) {
+function CountUp({ value, prefix = '', suffix = '', decimals = 0 }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, amount: 0.6 });
   const [display, setDisplay] = useState(0);
@@ -18,14 +18,14 @@ function CountUp({ value, prefix = '', suffix = '' }) {
     const controls = animate(0, value, {
       duration: 1.6,
       ease: [0.2, 0.7, 0.2, 1],
-      onUpdate: (v) => setDisplay(Math.round(v)),
+      onUpdate: (v) => setDisplay(Number(v.toFixed(decimals))),
     });
     return () => controls.stop();
-  }, [inView, value]);
+  }, [inView, value, decimals]);
 
   return (
     <span ref={ref}>
-      {prefix}{display}{suffix}
+      {prefix}{decimals ? display.toFixed(decimals) : display}{suffix}
     </span>
   );
 }
@@ -56,7 +56,7 @@ export default function Impact() {
               transition={{ duration: 0.6, delay: i * 0.08 }}
             >
               <p className="metric-value text-gradient">
-                <CountUp value={m.value} prefix={m.prefix} suffix={m.suffix} />
+                <CountUp value={m.value} prefix={m.prefix} suffix={m.suffix} decimals={m.decimals} />
               </p>
               <p className="metric-label">{m.label}</p>
             </motion.div>

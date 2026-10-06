@@ -95,26 +95,30 @@ export default function Work() {
         <SectionHeading
           number="04"
           eyebrow="Selected work"
-          title="Products and platforms I've helped ship."
-          description="Production work across B2B commerce, developer hiring and client businesses — plus the AI and infrastructure projects I build to push my own skills."
+          title="AI projects and production platforms."
+          description="AI agents and assistants I build, alongside production work across B2B commerce, developer hiring and client businesses."
         />
-
-        <div className="projects-grid">
-          {projects.map((p, i) => (
-            <ProjectCard key={p.slug} project={p} index={i} />
-          ))}
-        </div>
 
         <div className="labs">
           <div className="labs-head">
-            <h3>Engineering lab</h3>
-            <p>AI agents, local LLM tooling and self-hosted infrastructure.</p>
+            <h3>AI &amp; engineering projects</h3>
+            <p>Agentic AI, RAG-style assistants, local LLM tooling and self-hosted infrastructure.</p>
           </div>
           <div className="labs-grid">
             {labs.map((lab, i) => (
               <LabCard key={lab.name} lab={lab} index={i} />
             ))}
           </div>
+        </div>
+
+        <div className="labs-head production-head">
+          <h3>Production platforms</h3>
+          <p>Client and company products used by real users.</p>
+        </div>
+        <div className="projects-grid">
+          {projects.map((p, i) => (
+            <ProjectCard key={p.slug} project={p} index={i} />
+          ))}
         </div>
       </div>
     </section>

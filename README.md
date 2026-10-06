@@ -1,6 +1,6 @@
 # Manorma Sharma — Portfolio
 
-Personal portfolio of **Manorma Sharma**, Full Stack Engineer (React.js / Node.js).
+Personal portfolio of **Manorma Sharma**, Software Engineer.
 
 **Live:** https://manormasharma.github.io/Portfolio/
 

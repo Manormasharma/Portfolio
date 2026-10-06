@@ -6,7 +6,7 @@ export default {
     {
       name: 'type',
       type: 'string',
-      options: { list: ['certification', 'certificate', 'achievement'] },
+      options: { list: ['certification', 'certificate', 'badge', 'achievement'] },
     },
     { name: 'title', type: 'string' },
     { name: 'date', type: 'string' },

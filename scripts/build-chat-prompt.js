@@ -57,6 +57,12 @@ const certs = certifications
   .map((c) => `- **${c.title}** — ${c.issuer}, issued ${c.date}${c.expires ? `, valid until ${c.expires}` : ''}${c.skills ? `. Covers: ${c.skills.join(', ')}` : ''}`)
   .join('\n');
 
+const badges = certifications
+  .filter((c) => c.type === 'badge')
+  .sort(byOrder)
+  .map((c) => `- **${c.title}** — ${c.issuer}, earned ${c.date}${c.skills ? `. Covers: ${c.skills.join(', ')}` : ''}`)
+  .join('\n');
+
 const awards = certifications
   .filter((c) => c.type === 'achievement')
   .sort(byOrder)
@@ -81,6 +87,7 @@ ${profile.summary}
 
 - **Status:** ${profile.availability}
 - **Relocation:** ${profile.relocation}
+- **Open to roles:** ${profile.targetRoles.join('; ')}
 - **Email:** ${profile.contactEmail}
 - **Portfolio:** manormasharma.github.io/Portfolio
 - **LinkedIn:** ${link('linkedin')}
@@ -110,6 +117,10 @@ ${lab}
 ## Certifications
 
 ${certs}
+
+## Skill Badges
+
+${badges}
 
 ## Education
 

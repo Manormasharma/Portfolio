@@ -10,7 +10,7 @@
     ],
     "url": "https://humbee.in/",
     "desc": "Marketing site for HUMBEE, a multi-role B2B platform connecting manufacturers, distributors, dealers, and retailers. Built on WordPress with a custom theme and custom plugins to communicate the platform's story and drive lead capture.",
-    "order": 0,
+    "order": 0.3,
     "category": "HUMBEE"
   },
   {
@@ -76,7 +76,7 @@
     "url": "http://www.jassibindradesigns.com/",
     "desc": "Portfolio site for an interior design and renovation studio. Delivered a full-bleed, image-driven layout with HTML, CSS, and JavaScript that puts the client's project photography front and center.",
     "order": 2,
-    "category": "Client"
+    "category": "Oceanic Studio"
   },
   {
     "projectName": "Black Friday",
@@ -103,7 +103,7 @@
     "url": "https://spherecom.in/",
     "desc": "Corporate site for Sphere Com Services, a manufacturer of THINUX VHF/UHF RF transceivers. Built on WordPress with a custom theme to clearly communicate the company's products and brand story.",
     "order": 4,
-    "category": "Client"
+    "category": "Oceanic Studio"
   },
   {
     "projectName": "Deskify",

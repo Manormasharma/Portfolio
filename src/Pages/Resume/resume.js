@@ -30,6 +30,7 @@ function Block({ title, children }) {
 
 function Resume() {
   const certifications = certificationsData.filter((c) => c.type === 'certification').sort(byOrder);
+  const badges = certificationsData.filter((c) => c.type === 'badge').sort(byOrder);
   const awards = certificationsData.filter((c) => c.type === 'achievement').sort(byOrder);
   const education = educationData.slice().sort(byOrder);
   const experience = experienceData.filter((e) => e.visible).sort(byOrder);
@@ -138,6 +139,18 @@ function Resume() {
                   </div>
                 ))}
               </Block>
+
+              {badges.length > 0 && (
+                <Block title="Badges">
+                  {badges.map((c) => (
+                    <div className="cv-item" key={c.title}>
+                      <h4>{c.url ? <a href={c.url} target="_blank" rel="noreferrer">{c.title}</a> : c.title}</h4>
+                      <p>{c.issuer} · <span className="mono">{c.date}</span></p>
+                      {c.skills && <p className="cv-cert-skills">{c.skills.join(' · ')}</p>}
+                    </div>
+                  ))}
+                </Block>
+              )}
 
               <Block title="Education">
                 {education.map((e) => (

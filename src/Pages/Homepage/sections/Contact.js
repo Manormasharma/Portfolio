@@ -52,8 +52,15 @@ export default function Contact() {
             eyebrow="Contact"
             align="center"
             title={<>Let's build something <span className="text-gradient">great together.</span></>}
-            description={`I'm open to full-stack and frontend engineering roles. ${profile.relocation}.`}
+            description={`Open to software engineering roles across web, cloud and AI/GenAI. ${profile.relocation}.`}
           />
+
+          <div className="contact-roles" aria-label="Roles I am open to">
+            <span className="contact-roles-label mono">Open to roles</span>
+            {profile.targetRoles.map((r) => (
+              <span className="tag" key={r}>{r}</span>
+            ))}
+          </div>
 
           <div className="contact-email">
             <a href={email.url} className="btn btn-primary">

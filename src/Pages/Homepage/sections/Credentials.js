@@ -11,6 +11,8 @@ const byOrder = (a, b) => a.order - b.order;
 const items = [
   ...certificationsData.filter((c) => c.type === 'certification').sort(byOrder)
     .map((c) => ({ kind: 'Certification', icon: 'badge', title: c.title, sub: c.issuer, date: c.date, expires: c.expires, url: c.url, skills: c.skills })),
+  ...certificationsData.filter((c) => c.type === 'badge').sort(byOrder)
+    .map((c) => ({ kind: 'Badge', icon: 'badge', title: c.title, sub: c.issuer, date: c.date, url: c.url, skills: c.skills })),
   ...certificationsData.filter((c) => c.type === 'achievement').sort(byOrder)
     .map((c) => ({ kind: 'Award', icon: 'award', title: c.title, sub: c.issuer, date: c.date, url: c.url })),
   ...educationData.slice().sort(byOrder)

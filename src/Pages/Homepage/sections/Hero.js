@@ -5,7 +5,7 @@ import Icon from '../../../components/Icon/Icon';
 import profile from '../../../data/profile.json';
 import experienceData from '../../../data/experience.json';
 import certificationsData from '../../../data/certifications.json';
-import { scrollToSection } from '../../../lib/site';
+import { scrollToSection, OPEN_CHAT_EVENT } from '../../../lib/site';
 import './Hero.scss';
 
 const current = experienceData.slice().sort((a, b) => a.order - b.order)[0];
@@ -20,8 +20,8 @@ const TABS = {
     ['ind'], ['key', 'experience'], ['p', ': '], ['str', `'${profile.yearsExperience} years'`], ['p', ','], 'br',
     ['ind'], ['key', 'company'], ['p', ': '], ['str', `'${current.company}'`], ['p', ','], 'br',
     ['ind'], ['key', 'basedIn'], ['p', ': '], ['str', `'${profile.location}'`], ['p', ','], 'br',
-    ['ind'], ['key', 'stack'], ['p', ': ['], ['str', "'React'"], ['p', ', '], ['str', "'Next.js'"], ['p', ', '], ['str', "'Node'"], ['p', ', '], ['str', "'AWS'"], ['p', '],'], 'br',
-    ['ind'], ['key', 'openTo'], ['p', ': ['], ['str', "'Europe'"], ['p', ', '], ['str', "'India'"], ['p', '],'], 'br',
+    ['ind'], ['key', 'stack'], ['p', ': ['], ['str', "'React'"], ['p', ', '], ['str', "'Next.js'"], ['p', ', '], ['str', "'Python'"], ['p', ', '], ['str', "'GenAI'"], ['p', ', '], ['str', "'AWS'"], ['p', '],'], 'br',
+    ['ind'], ['key', 'openTo'], ['p', ': ['], ['str', "'India'"], ['p', ', '], ['str', "'Europe'"], ['p', '],'], 'br',
     ['ind'], ['key', 'available'], ['p', ': '], ['kw', 'true'], ['p', ','], 'br',
     ['p', '};'],
   ],
@@ -173,7 +173,7 @@ export default function Hero() {
             {profile.availability}
             <span className="availability-extra">
               <span className="availability-sep" />
-              <Icon name="globe" size={14} /> Europe · India
+              <Icon name="globe" size={14} /> {profile.locationLine}
             </span>
           </motion.div>
 
@@ -182,7 +182,7 @@ export default function Hero() {
           </motion.p>
 
           <motion.h1 variants={rise} className="hero-title">
-            Building <span className="text-gradient">scalable, high-performance</span> web platforms.
+            Building <span className="text-gradient">production web platforms</span> and AI-powered products.
           </motion.h1>
 
           <motion.p variants={rise} className="hero-focus">
@@ -191,13 +191,22 @@ export default function Hero() {
 
           <motion.p variants={rise} className="hero-lede">{profile.heroIntro}</motion.p>
 
+          <motion.div variants={rise} className="hero-ai" aria-label="AI and GenAI focus">
+            {profile.aiHighlights.map((h) => (
+              <span key={h} className="ai-chip">{h}</span>
+            ))}
+          </motion.div>
+
           <motion.div variants={rise} className="hero-actions">
-            <button type="button" className="btn btn-primary" onClick={() => scrollToSection('experience')}>
-              Explore my experience <Icon name="arrowRight" />
-            </button>
-            <Link className="btn btn-ghost" to="/resume">
-              <Icon name="file" /> View résumé
+            <Link className="btn btn-primary" to="/resume">
+              <Icon name="file" /> View Resume
             </Link>
+            <button type="button" className="btn btn-ghost" onClick={() => scrollToSection('work')}>
+              <Icon name="arrowRight" /> View Projects
+            </button>
+            <button type="button" className="btn btn-ghost" onClick={() => window.dispatchEvent(new Event(OPEN_CHAT_EVENT))}>
+              <Icon name="sparkles" /> Ask my AI assistant
+            </button>
           </motion.div>
 
           <motion.div variants={rise} className="hero-socials">
@@ -215,7 +224,7 @@ export default function Hero() {
               </a>
             ))}
             <span className="hero-location">
-              <Icon name="mapPin" size={14} /> {profile.location}
+              <Icon name="mapPin" size={14} /> {profile.location} · {profile.workAuthNote}
             </span>
           </motion.div>
         </motion.div>

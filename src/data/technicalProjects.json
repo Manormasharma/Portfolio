@@ -1,10 +1,28 @@
 [
   {
+    "name": "AI Recruiter Assistant",
+    "subtitle": "Chatbot built into this portfolio",
+    "bullets": [
+      "**Problem:** recruiters skim portfolios and rarely find the specific answer they need.",
+      "**Approach:** LLM chatbot (Gemini via a serverless worker) grounded on this portfolio's own data, so answers on experience, skills, certifications and availability stay accurate and consistent with the CV."
+    ],
+    "tech": [
+      "Gemini API",
+      "LLM integration",
+      "Prompt engineering",
+      "React",
+      "Serverless"
+    ],
+    "url": "https://github.com/Manormasharma/Portfolio",
+    "order": 3,
+    "category": "AI"
+  },
+  {
     "name": "TradeExpert",
     "subtitle": "Multi-Agent Stock Analysis Assistant",
     "bullets": [
-      "Developed a multi-agent stock analysis assistant in Python using Google ADK, supporting Gemini, Ollama and LM Studio models.",
-      "Built AI-powered workflows for stock screening, company research, financial analysis and market trend evaluation."
+      "**Problem:** researching and screening stocks means juggling many sources and manual analysis.",
+      "**Approach:** multi-agent assistant in Python on **Google ADK**, with specialised agents for screening, company research, financial analysis and trend evaluation; runs on Gemini, Ollama or LM Studio models and pulls market data from Yahoo Finance."
     ],
     "tech": [
       "Python",
@@ -15,15 +33,30 @@
       "Yahoo Finance API"
     ],
     "url": "https://github.com/Manormasharma/TradeExpert",
-    "order": 1,
+    "order": 4,
+    "category": "AI"
+  },
+  {
+    "name": "AI Code Reviewer Bot",
+    "subtitle": "",
+    "bullets": [
+      "**Problem:** code reviews are slow and inconsistent for small changes.",
+      "**Approach:** Python bot that analyzes code changes and generates automated review feedback."
+    ],
+    "tech": [
+      "Python",
+      "LLM APIs"
+    ],
+    "url": "https://github.com/Manormasharma/ai-code-reviewer-bot",
+    "order": 4,
     "category": "AI"
   },
   {
     "name": "AI-Text-Assistant",
     "subtitle": "Privacy-First Local AI Assistant",
     "bullets": [
-      "Built a privacy-first AI text assistant using React, Node.js and Ollama for fully local LLM inference with no external API calls.",
-      "Implemented summarization, rewriting, grammar correction and content generation."
+      "**Problem:** cloud AI writing tools send private text to third-party APIs.",
+      "**Approach:** React + Node.js app on **Ollama** for fully local LLM inference with no external API calls, covering summarization, rewriting, grammar correction and content generation."
     ],
     "tech": [
       "React",
@@ -31,7 +64,27 @@
       "Ollama"
     ],
     "url": "https://github.com/Manormasharma/AI-Text-Assistant",
-    "order": 2,
+    "order": 5,
+    "category": "AI"
+  },
+  {
+    "name": "Multi-Agent Content Pipeline",
+    "subtitle": "Research → Verify → Generate",
+    "bullets": [
+      "**Problem:** technical content takes hours of manual research, fact-checking and editing before it is publishable.",
+      "**Approach:** containerized AI microservice and web app that automates end-to-end technical research, editorial fact-checking, content synthesis and AI image generation, using specialised **CrewAI** agents for each stage (research → verify → generate)."
+    ],
+    "tech": [
+      "Python",
+      "CrewAI",
+      "Google Gemini",
+      "Tavily Search",
+      "FastAPI",
+      "Streamlit",
+      "Docker"
+    ],
+    "url": "https://github.com/Manormasharma/multi-agent-content-pipeline",
+    "order": 5,
     "category": "AI"
   },
   {
@@ -54,7 +107,7 @@
       "n8n"
     ],
     "url": null,
-    "order": 3,
+    "order": 6,
     "category": "Infrastructure"
   }
 ]

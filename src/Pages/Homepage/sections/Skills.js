@@ -67,7 +67,7 @@ export default function Skills() {
         <SectionHeading
           number="03"
           eyebrow="Toolkit"
-          title="A full-stack toolkit, sharpened in production."
+          title="A toolkit spanning web, cloud and AI."
           description={`${total} technologies across ${categories.length} disciplines. Search to see where a tool fits.`}
         />
 
