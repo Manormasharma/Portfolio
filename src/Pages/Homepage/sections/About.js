@@ -11,7 +11,7 @@ const PILLAR_ICONS = ['layers', 'code', 'shield', 'gauge', 'cloud', 'sparkles'];
 
 const facts = [
   { icon: 'mapPin', label: 'Based in', value: profile.location },
-  { icon: 'globe', label: 'Relocation', value: 'Europe · Bengaluru · Pune · Hyderabad' },
+  { icon: 'globe', label: 'Relocation', value: 'Global (visa sponsorship) · Bengaluru · Pune · Hyderabad' },
   { icon: 'briefcase', label: 'Experience', value: `${profile.yearsExperience} years, 5 teams` },
   { icon: 'graduation', label: 'Education', value: `${educationData[0].degree.split(',')[0]} — IGNOU` },
   { icon: 'user', label: 'Languages', value: profile.languages.join(' · ') },
