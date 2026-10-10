@@ -17,6 +17,7 @@
 }
 
 .cv {
+  min-width: 0;
   padding: 56px;
   background: var(--glass-strong);
 
@@ -286,15 +287,48 @@
   .cv {
     padding: 28px 22px;
   }
+  .cv-header > div,
+  .cv-contact li,
+  .cv-contact a,
+  .cv-relocation {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .cv-header {
+    gap: 20px;
+  }
+  .cv-relocation {
+    align-items: flex-start;
+
+    svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+  }
   .cv-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 8px;
   }
   .cv-side {
     margin-top: 32px;
   }
   .cv-contact {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-page {
+    padding: 24px 0 80px;
+  }
+  .cv {
+    padding: 24px 16px;
+  }
+  .cv-toolbar .btn {
+    width: 100%;
+  }
+  .cv .tag {
+    white-space: normal;
   }
 }
 

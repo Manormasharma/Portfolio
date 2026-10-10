@@ -106,7 +106,7 @@
     padding: 56px 20px 24px;
   }
   .contact-channels {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 

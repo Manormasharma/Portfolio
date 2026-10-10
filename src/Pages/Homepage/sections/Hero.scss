@@ -190,7 +190,13 @@
 .editor-tabs {
   display: flex;
   gap: 2px;
+  min-width: 0;
   overflow-x: auto;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .editor-tab {
@@ -368,6 +374,17 @@
 }
 
 @media (max-width: 560px) {
+  .availability {
+    white-space: normal;
+    max-width: 100%;
+    align-items: flex-start;
+    border-radius: var(--radius-lg);
+    line-height: 1.4;
+  }
+  .availability-dot {
+    flex-shrink: 0;
+    margin-top: 6px;
+  }
   .floating-chip {
     display: none;
   }
