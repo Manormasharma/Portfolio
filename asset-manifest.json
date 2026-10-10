@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.b6d9e8cc.css",
-    "main.js": "/Portfolio/static/js/main.087a8768.js",
+    "main.css": "/Portfolio/static/css/main.2c8c1d61.css",
+    "main.js": "/Portfolio/static/js/main.ea87721b.js",
     "static/media/jassibindra.png": "/Portfolio/static/media/jassibindra.153158d8012c58b503cf.png",
     "static/media/spherecom.png": "/Portfolio/static/media/spherecom.2f332b71597451706bac.png",
     "static/media/black-friday-deal.png": "/Portfolio/static/media/black-friday-deal.5f15ed976bb64055bbd2.png",
@@ -42,11 +42,11 @@
     "static/media/gemini.svg": "/Portfolio/static/media/gemini.f960b52d1ae74004fedb07efda60d698.svg",
     "static/media/nextjs.svg": "/Portfolio/static/media/nextjs.10d70a5cf0d559c0eb4207542afb9f72.svg",
     "static/media/terraform.svg": "/Portfolio/static/media/terraform.8f3595d096cfd092643556e1a1245ac9.svg",
-    "main.b6d9e8cc.css.map": "/Portfolio/static/css/main.b6d9e8cc.css.map",
-    "main.087a8768.js.map": "/Portfolio/static/js/main.087a8768.js.map"
+    "main.2c8c1d61.css.map": "/Portfolio/static/css/main.2c8c1d61.css.map",
+    "main.ea87721b.js.map": "/Portfolio/static/js/main.ea87721b.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6d9e8cc.css",
-    "static/js/main.087a8768.js"
+    "static/css/main.2c8c1d61.css",
+    "static/js/main.ea87721b.js"
   ]
 }
